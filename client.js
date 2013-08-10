@@ -20,6 +20,14 @@ if(!String.prototype.trim) {
 // Runs a lithum script, where the script is passed as a string to main()
 function main(file){
   
+  var variables = {
+    e : 2.1,
+    π : 3.14
+  }
+  
+  variables.e.type = "int",
+  variables.π.type = "int",
+  
   console.log(">>> import this");
   console.log("Beautiful is better than ugly.");
   console.log("Explicit is better than implicit.");
@@ -33,7 +41,7 @@ function main(file){
   console.log("Errors should never pass silently.");
   console.log("Unless explicitly silenced.");
   console.log("In the face of ambiguity, refuse the temptation to guess.");
-  console.log("There should be one -- and preferably only one -- obvious way to do it.");
+  console.log("There should be one - and preferably only one - obvious way to do it.");
   console.log("Although that way may not be obvious at first unless you're Dutch.");
   console.log("Now is better than never.");
   console.log("Although never is often better than *right* now.");
@@ -44,12 +52,7 @@ function main(file){
   // Spit the file into lines.
   var lines = file.split("\n\
 ");
-  var variables = {
-    π : 3.141592653589,
-    e : 2.718281828459,
-    c : 299792458,
-    atm : 101325
-  };
+ 
   
   // A for loop that goes through each line.
   var length = lines.length;
@@ -81,11 +84,11 @@ function main(file){
       // If there's no trimRight function, we'll cut any white space to the 
       // right out of the line.
       if(!String.protoype.trimRight){
-        var a = line.length;
-        while(line.charAt(a)==" "){
-          a--;
+        var b = line.length;
+        while(line.charAt(b)==" "){
+          b--;
         }
-        line = line.slice(0,a);
+        line = line.slice(0,b);
       
         // Otherwise, use the trimRight function.
       }else{
@@ -99,6 +102,8 @@ function main(file){
     // Initialise a variable for 
     var word,
         sofar,
+        bracketcount = 0,
+        codeblock = [],
         code;
     for(i = 0; i < chars.length; i++){
       var token = chars[i];
@@ -114,14 +119,23 @@ function main(file){
             case "for":
               break;
           }
+          word = null;
           break;
+          
+        // In the case of a quote.
         case '"':
           break;
+          
+        // In the case of an open bracket.
         case "(":
-          switch(word){
+          if(sofar.charAt(-1) == " "){
+            bracketcount++;
+          }else if(word != null){
             
           }
           break;
+          
+        
         case ")":
           break;
         case "#":
@@ -131,15 +145,18 @@ function main(file){
         case "=":
           break;
         default:
-          
+          word = word + token;
           break;
          
       }
       
       sofar += token;
     }
-  word = null,
-  sofar = null;
+    
+    if(bracketcount != 0){
+      throw new Exception("Syntax Error");
+    }
+  
   }
 }
 
