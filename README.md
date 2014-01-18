@@ -21,7 +21,7 @@ The name Lithium comes from, well, the element Lithium. Lithium is the lightest 
 Philosophy
 ----------
 
-TODO: Put something of meaning here.
+TODO: Put something deep and meaningful here.
 
 License
 -------
