@@ -8,9 +8,7 @@ This repository is mostly in Markdown, which is just fancy text. Check out John 
 Branches
 --------
 
-Within the repository there are several branches. Any development happens in the `develop` branch. The `master` branch contains the latest stable version, while there is a branch for each previous release named using a `major.minor.fix` versioning scheme.
-
-If you are committing changes, please do so into the `develop` branch. Many people mistakenly try and commit to the `master` branch, so make sure you are careful :).
+Within the repository there are several branches. Any development happens in the `develop` branch. The `master` branch contains the latest stable version, while if you head over to [releases](https://github.com/thomasjamesfoster96/lithium/releases) you'll find released versions of Lithium.
 
 Bug Fixes
 ---------
