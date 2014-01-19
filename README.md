@@ -4,24 +4,28 @@ Lithium
 Contents
 --------
 
-*   About Lithium
-*   Philosophy
-*   License
-*   Using Lithium
-*   Roadmap and TODOs
-*   FAQ
+*   [What's Lithium]()
+*   [Syntax and Design]()
+*   [Features](#features)
+*   [License](#license)
+*   [Using Lithium]()
+*   [Roadmap and TODOs]()
+*   [FAQ](#faq)
 
-About Lithium
--------------
+What's Lithium?
+---------------
 
 Lithium is sort of like a four-way mash between JavaScript, Python, Ruby and the maths you learnt in high school. Most people should be able to understand it within an hour, assuming they 
 
 The name Lithium comes from, well, the element Lithium. Lithium is the lightest metal, yet powers everything from your laptop to your phone to torches to cars. This is sort of the aim with Lithium - create something which is lightweight and can be used almost anywhere.
 
-Philosophy
+Syntax and Design
 ----------
 
 TODO: Put something deep and meaningful here.
+
+Features
+--------
 
 License
 -------
