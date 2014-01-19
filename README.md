@@ -4,12 +4,12 @@ Lithium
 Contents
 --------
 
-*   [What's Lithium]()
-*   [Syntax and Design]()
+*   [What's Lithium](#whats-lithium)
+*   [Syntax and Design](#syntax-and-design)
 *   [Features](#features)
 *   [License](#license)
-*   [Using Lithium]()
-*   [Roadmap and TODOs]()
+*   [Using Lithium](#using-lithium)
+*   [Roadmap and TODOs](#roadmap-and-todos)
 *   [FAQ](#faq)
 
 What's Lithium?
@@ -27,16 +27,22 @@ TODO: Put something deep and meaningful here.
 Features
 --------
 
+These are better explained in the docs but features include:
+* Units.
+* Varied data types such as `int`, `dec`, `str`, `bool`, etc.
+* `for`, `while`, `until`, `if`, `else`, and all that stuff.
+* Functions are first class objects.
+* Classes and prototyping.
+
 License
 -------
 
 Lithium is licensed under the MIT License. You can find a copy in the [LICENSE.md](LICENSE.md) file included in this directory.
 
-
 Using Lithium
 -------------
 
-Lithium can theoretically be used in standalone applications, server-side scripting as well as in client-side scripting. There is a reference implementation of the Lithium spec that transcompiles Lithium to JavaScript.
+This repository simple includes documentation for Lithium. Actual implementations are coming soon.
 
 Roadmap and TODOS
 -----------------
