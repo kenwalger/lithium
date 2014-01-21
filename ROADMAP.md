@@ -26,3 +26,9 @@ This file just contains a list of features for future releases that contributors
 *   __Built-in constants__
 
     `π`, `e`, `φ`.
+
+## Version 1.0.0
+
+*   __Docs in HTML__
+
+    As noted in [#1](https://github.com/thomasjamesfoster96/lithium/issues/1), the docs for Lithium should be in, or be easily made available, in HTML.
