@@ -5,24 +5,24 @@ This file just contains a list of features for future releases that contributors
 
 ## Version 0.0.0
 
-*   ### Types
+*   __Types__
    
     `int`, `str`, `var, `dec`, `list`, `dict`, `obj`, `class`, `set`, `fn`, `const`.
 
     Lithium 0.0.0 should support the eleven types above. Each type is referred to by a two to five letter abbreviation. `var` is a special type in that it can be of any type. 
 
-*   ### Arithmatic
+*   __Arithmatic__
  
     `+`, `-`, `/`, `×`, `÷`, `√`, etc.
 
-*   ### Blocks
+*   __Statements__
 
     `if`, `else`, `while`, `until`, `for`, etc.
 
-*   Built-in functions
+*   __Built-in functions__
 
     `sin()`, `cos()`, etc.
 
-*   Built-in variables/constants.
+*   __Built-in constants__
 
     `π`, `e`, `φ`.
