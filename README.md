@@ -59,7 +59,7 @@ Using Lithium
 
 This repository simple includes documentation for Lithium. Actual implementations are coming soon.
 
-Roadmap and TODOS
+Roadmap and TODOs
 -----------------
 
 Lithium is intended to be a continually evolving language. Anyone (developers using Lithium, contributors to a Lithium implementation or contributors to this spec) is invited to submit feature requests as an issue on Github with the label 'feature request'. Accepted feature requests will make it to the [ROADMAP.md](ROADMAP.md) file.
@@ -69,9 +69,9 @@ The [TODO.md](TODO.md) file has a list of features and bigfixes needed for the n
 Versioning
 ----------
 
-Lithium is released as 'snapshots' that are given a version number based on the scheme of `major.minor.fix`. A major release is one that removes features or radically adds or changes other features. A minor release adds features or deprecates (but doesn't remove) others. A fix release is only for security or bug fixes.
+Lithium roughly follows the [Semantic Versioning](http://semver.org/) standard., but not perfectly. Releases are available at the [project's releases page](https://github.com/thomasjamesfoster96/lithium/releases). They follow the `major.minor.patch` scheme.
 
-The first version of Lithium is 0.0.0, but version 1.0.0 will be the first version that is ready for production use.
+Major versions are for when backwards compatabilty with the previous version is broken, such as a major redesign or the removal of any features. Minor versions are releases when features are added or deprecated, and retain backwards compatability. Patches are releases to fix bugs or typos.
 
 Contributing
 ------------
