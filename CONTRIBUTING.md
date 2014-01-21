@@ -20,7 +20,7 @@ Feature Additions/Removals
 
 Features aren't added or removed simply at the whim of any one contributor. So that we don't end up with a bloated language, we request that you open any feature requests as an issue tagged as 'feature request' first. After a period (could be a few days, could be a month) of discussion, the feature may be added to the ROADMAP.md and/or TODO.md files. Generally, a feature will be added in the next minor release, but a radical new feature may instead be added at the next major release.
 
-The same protocol follows for removing features. Features will be deprecated after the next minor release, but not removed. A feature will only be removed at the next major release. This is mainly because users of Lithium should only worry about their code having combatability issues at a major release.
+The same protocol follows for removing features. Features will be deprecated (meaning that users of the feature should be planning for its removal) after the next minor release, but not removed. A feature will only be removed at the next major release. This is so that users of Lithium should only worry about their code having combatability issues at a major release.
 
 Code Style
 ----------
