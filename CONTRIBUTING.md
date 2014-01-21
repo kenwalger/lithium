@@ -3,17 +3,21 @@ CONTRIBUTING
 
 Anyone can contribute to Lithium, so long as you don't break anything on purpose. 
 
-This repository is mostly in Markdown, which is just fancy text. Check out John Gruber's Markdown [syntax post on Daring Fireball](http://daringfireball.net/projects/markdown/syntax) for the most complete tutorial out there. Where there is not much of a choice, we also use [Github Flavoured Markdown](https://help.github.com/articles/github-flavored-markdown), which is just an extension of plain old Markdown.
+This repository is mostly written in Markdown, which is for those who don't know, sort like fancy plain text. Check out John Gruber's Markdown [syntax post on Daring Fireball](http://daringfireball.net/projects/markdown/syntax) for the most complete tutorial out there. Because this project is on Github, we also use [Github Flavoured Markdown](https://help.github.com/articles/github-flavored-markdown), which is an extension of Markdown.
 
 Branches
 --------
 
-Within the repository there are several branches. Any development happens in the `develop` branch. The `master` branch contains the latest stable version, while if you head over to [releases](https://github.com/thomasjamesfoster96/lithium/releases) you'll find released versions of Lithium.
+At the moment we only use one branch, that being the `master` branch. As you can't really 'break' Markdown, there isn't really a need at the moment to use multiple branches. However, there is a chance we might use them in the future.
+
+If you head over to [releases](https://github.com/thomasjamesfoster96/lithium/releases) you'll find released versions of Lithium.
 
 Bug Fixes
 ---------
 
-If you find any sort of error, spelling mistak, etc. in this project, feel free to fix it and submit a pull request with your commit. There is also usually a list of bugs that need to be fixed in the [TODO.md](TODO.md) file.
+If you find any sort of error, spelling mistak, etc. in this project, feel free to fix it and submit a pull request with your commit. Little fixes like this are welcomed and are usually accepted pretty quickly.
+
+If you've got time, there is also usually a list of bugs that need to be fixed in the [TODO.md](TODO.md) file.
 
 Feature Additions/Removals
 --------------------------
