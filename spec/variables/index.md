@@ -8,3 +8,5 @@ Lithium supports almost a dozen data types, and you are welcome to suggest more 
 The `str` data type is for strings. 
 
 ## `int`
+
+The `int` data type is used for integers.
