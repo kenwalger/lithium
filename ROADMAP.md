@@ -7,7 +7,7 @@ This file just contains a list of features for future releases that contributors
 
 *   __Types__
    
-    `int`, `str`, `var, `dec`, `list`, `dict`, `obj`, `class`, `set`, `fn`, `const`.
+    `int`, `str`, `var`, `dec`, `list`, `dict`, `obj`, `class`, `set`, `fn`, `const`.
 
     Lithium 0.0.0 should support the eleven types above. Each type is referred to by a two to five letter abbreviation. `var` is a special type in that it can be of any type. 
 
