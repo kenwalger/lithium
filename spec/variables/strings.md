@@ -9,8 +9,16 @@ A string is declared as follows:
 str myString : "Hello World!"
 ```
 
+Strings also inhereit methods and properties from the `obj` type.
+
 ### Properties
 
 In addition to the properties that each data type inheirits from the `obj` data type, strings also have the following properties:
 
 ##### `String.case`
+
+
+
+### Methods
+
+### Events
