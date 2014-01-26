@@ -5,7 +5,7 @@ Contents
     1. [Hello World!](introduction/hello-world.md)
     2. [Notable Features](introdction/notable-features.md)
     
-2.  [__Installing__](installing/index.md)__
+2.  [__Installing__](installing/index.md)
     1. [The Docs](installing/install-docs.md)
     2. [Lithium-via-Node](installing/lithium-via-node.md)
     3. [Lithium-to-Wiring](installing/lithium-to-wiring.md)
