@@ -49,3 +49,14 @@ bar.one
 bar.three
 # >> 3
 ```
+
+Events
+------
+
+### `prototype`
+
+### `construct`
+
+### `destruct`
+
+### `finalise`
