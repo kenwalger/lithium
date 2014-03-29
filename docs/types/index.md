@@ -5,7 +5,7 @@ Lithium supports almost a dozen data types, and you are welcome to suggest more 
 
 ### [`var`](variable.md)
 
-A variable that can be of mixed type can be declared as the `var` type.
+A variable that can be of mixed type can be declared as the `var` type. The type of the variable will be determined when it is used in a function.
 
 ### [`cnst`](constant.md)
 
@@ -21,7 +21,7 @@ The `int` data type is used for integers.
 
 ### [`dec`](decimal.md)
 
-Numbers, such as floating point number, can be declared using the `dec` type. 
+Floating point numbers can be declared using the `dec` type. 
 
 ### [`bool`](boolean.md)
 

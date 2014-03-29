@@ -22,7 +22,7 @@ A quick overview of the basic syntax.
 * Statements
 * Block statements
 
-### [Variables](variables/index.md)
+### [Types](types/index.md)
 
 A detailed overview of each variable type. Includes type-specific methods and properties.
 

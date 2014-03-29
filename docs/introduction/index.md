@@ -1,7 +1,7 @@
 Introduction
 ============
 
-Lithium (yes, it's capitalised!) is sort of like a four-way mash between JavaScript, Python, Ruby and the maths you learnt in high school. Most people should be able to understand it within an hour, assuming they have a bit of experience with using a computer.
+Lithium is sort of like a four-way mash between JavaScript, Python, Ruby and the maths you learnt in high school. Most people should be able to understand it within an hour, assuming they have a bit of experience with using a computer.
 
 The name Lithium comes from, well, the element lithium. Lithium is the lightest metal, yet powers everything from your laptop to your phone to torches to cars. This is sort of the aim with Lithium - create something which is lightweight and can be used almost anywhere.
 
@@ -11,7 +11,7 @@ Lithium's syntax has been crafted with a few ideas in mind, which are below:
 * Simple programs should only require a simple understanding to read and write.
 * Be feature rich, but not feature heavy.
 * Follow standards where practical.
-* Everyone's use will be different
+* Everyone's use case will be different.
 
 While Lithium should be something you can quickly write and use, we are prepared to sacrifice a little bit of speed of coding for speed of understanding later on. Whilst it might be a few seconds quicker to write code one way, it is probably better to sacrifice those few seconds now so that they don't turn into hours later on.
 

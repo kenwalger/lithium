@@ -1,14 +1,14 @@
 Object
 ======
 
-Object is a generic data type for an object. Every object in Lithium is descended from this object.
+Object is a generic data type for an variable. In practice, every variable in Lithium is extended from Object, but Object is actually extended from the `var` type. See the page for the `var` type for more on this.
 
 Methods
 -------
 
 ### `Object.listen(str eventType, fn callback( event ))`
 
-The `Object.listen()` method creates an event listenr for the object. The method accepts two parameters, `eventType` and `callback`. Both are required and an error will be raised of they are not passed.
+The `Object.listen()` method creates an event listener for the object. The method accepts two parameters, `eventType` and `callback`. Both are required and an error will be raised of they are not passed.
 
 `eventType` is a string referring to the name of the event to listen for, such as `"message"` or `"connection"`. This must not contain any spaces.
 
@@ -50,6 +50,32 @@ bar.three
 # >> 3
 ```
 
+### `Object.class`
+
+The `Object.class` property returns the class that the object is an instance of.
+
+Example:
+
+```lithium
+obj hello : new Greeting()
+
+console.log(hello.class)
+# "Greeting" will be returned.
+```
+
+### `Object.type`
+
+The `Object.type` property returns the type that the object is.
+
+Example:
+
+```lithium
+var hello : new Greeting()
+
+console.log(hello.type)
+# 'obj' will be returned.
+```
+
 Events
 ------
 
@@ -57,6 +83,8 @@ Events
 
 ### `construct`
 
+The `construct` event is fired when the object is constructed.
+
 ### `destruct`
 
-### `finalise`
+The `destruct` event is fired when the object is destroyed. 

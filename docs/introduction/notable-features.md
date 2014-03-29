@@ -1,7 +1,10 @@
 Features
 ========
 
-Lithium has a number of features which both differentiate it from other languages and also show a degree of design inheritence.
+Lithium has a number of features which users of other programming languages might find different, odd or useful. Some of them are highlight below:
+
+* Units
+* Type System
 
 Units
 -----
@@ -10,11 +13,7 @@ Units lets you assign a SI unit and SI prefix to any variable of type `int` or `
 
 ```lithium
 int distance : 45mm
-```
 
-In the example above, the variable distance is in millimetres. If this was put into a function, the correct units could be used.
-
-```lithium
 fn cubeToLitres(int sideLength cm) : 
     return (sideLength * sideLength * sideLength) / 1000
 
@@ -29,7 +28,9 @@ int radius : 45°
 cubeToLitres(radius)
 ```
 
-Here, the function is getting an integer but the units are degrees. `cubeToLitres()` will raise an exception and will not run.
+Here, the function is getting an integer but the units are degrees. `cubeToLitres()` will throw an exception and the program will not run.
 
 Type System
 -----------
+
+Lithium has both implicit and explicit types.
