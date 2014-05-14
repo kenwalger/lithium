@@ -1,0 +1,62 @@
+{[
+  {
+    text : "tera",
+    symbol : "T",
+    factor : 1000000000000
+  },
+  {
+    text : "giga",
+    symbol : "G",
+    factor : 1000000000
+  },
+  {
+    text : "mega",
+    symbol : "M",
+    factor : 1000000
+  },
+  {
+    text : "kilo",
+    symbol : "k",
+    factor : 1000
+  },
+  {
+    text : "hecto",
+    symbol : "h",
+    factor : 100
+  },
+  {
+    text : "deca",
+    symbol : "da",
+    factor : 10
+  },
+  {
+    text : "deci",
+    symbol : "",
+    factor : 0.1
+  },
+  {
+    text : "centi",
+    symbol : "",
+    factor : 0.01
+  },
+  {
+    text : "milli",
+    symbol : "",
+    factor : 0.001
+  },
+  {
+    text : "micro",
+    symbol : "",
+    factor : 
+  },
+  {
+    text : "nano",
+    symbol : "",
+    factor : 
+  },
+  {
+    text : "pico",
+    symbol : "",
+    factor : 
+  },
+]}
