@@ -1,0 +1,14 @@
+class JSON :=
+
+  function parse(string json) := 
+    
+    obj result = {};
+    
+    if (json = null)
+    
+      obj exception = 
+    
+      raise exception
+    
+    return obj result
+    
