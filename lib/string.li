@@ -1,0 +1,12 @@
+
+class String(string literal) extends Object :=
+
+  function constructor(string literal) :=
+  
+    
+  function charAt(integer characterPoint) :=
+  
+    return 
+    
+  function count(string 
+
