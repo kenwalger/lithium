@@ -1,12 +1,30 @@
 
-class String(string literal) extends Object :=
+class String(string inputValue) extends Object :=
 
-  function constructor(string literal) :=
+  string value
+
+  function constructor(string inputValue) :=
+  
+    this = inputValue
+    
+    string value = inputValue
   
     
-  function charAt(integer characterPoint) :=
+  #
+  # function charAt(integer position)
+  #
+  # returns string
+  #
+  # Returns the character at the position 
+  #
+    
+  function charAt(integer position) :=
   
-    return 
+    if (position < 0) or (position > this.length)
+      
+      return string ""
+  
+    return string this.split("")[position]
     
   function count(string 
 
