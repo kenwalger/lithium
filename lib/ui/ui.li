@@ -1,0 +1,28 @@
+
+use ''
+
+class UI :=
+
+  class Window
+  
+  class Button
+  
+  class Textbox
+  
+  class Editor
+  
+  class Picture
+  
+  class Icon
+  
+  class Switch
+  
+  class Tab
+  
+  class View
+  
+  class Searchbox
+  
+  class 
+  
+  
