@@ -1,11 +1,14 @@
 #!/bin/bash
 
-## Linux
+if [[ hash oscript 2>/dev/null; ]]; then
+
+	osascript install/mac-os-x.applescript
+
+	exit 0;
+
+fi	
+
 ROOT=$(dirname $(echo $(lsof -p $$ | grep -E "/"$(basename $0)"$") | sed -r s/'^([^\/]+)\/'/'\/'/1 2>/dev/null))
-if [ $? -ne 0 ]; then
-## OSX
-  ROOT=$(dirname $(echo $(lsof -p $$ | grep -E "/"$(basename $0)"$") | sed -E s/'^([^\/]+)\/'/'\/'/1 2>/dev/null))
-fi
 
 # Go to /etc and make a place for lithium config files, symlinks to modules and other stuff.
 
@@ -38,7 +41,7 @@ sudo git clone https://github.com/thomasfoster96/lithium.git
 
 cd /etc/lithium/settings
 
-"{}" > compilers.json
+sudo "{}" > compilers.json
 
 # Go to /usr/lib and make a place to store modules.
 
