@@ -1,6 +1,6 @@
 import unittest
 
-from pypkg import core, utils
+from src import core, utils
 
 class PypkgTest(unittest.TestCase):
     

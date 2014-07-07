@@ -8,7 +8,7 @@ version_file = open(os.path.join(here, 'src', 'VERSION'))
 version = version_file.read().strip()
 
 setup(
-    name='lithium',
+    name='src',
 
     # Versions should comply with PEP440. For single-sourced versioning, see
     # http://packaging.python.org/en/latest/tutorial.html#version
