@@ -4,7 +4,7 @@ import os
 
 here = os.path.abspath(os.path.dirname(__file__))
 
-version_file = open(os.path.join(here, 'pypkg', 'VERSION'))
+version_file = open(os.path.join(here, 'src', 'VERSION'))
 version = version_file.read().strip()
 
 setup(
@@ -68,7 +68,7 @@ setup(
     # Data files included in your packages. If using Python 2.6 or less, 
     # then these have to be included in MANIFEST.in as well.
     package_data={
-        'pypkg': ['package_data.dat'],
+        'src': ['package_data.dat'],
     },
 
     # To provide executable scripts, use entry points in preference to the
