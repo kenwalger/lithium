@@ -11,41 +11,39 @@ fi
 
 cd /etc
 
-mkdir lithium
+sudo mkdir lithium
 
 cd lithium
 
-mkdir source
-mkdir packages
-mkdir compilers
-mkdir docs
-mkdir settings
-mkdir bin
+sudo mkdir source
+sudo mkdir packages
+sudo mkdir compilers
+sudo mkdir docs
+sudo mkdir settings
+sudo mkdir bin
 
-cp $ROOT/docs/* /etc/lithium/docs/
+sudo cp $ROOT/docs/* /etc/lithium/docs/
 
-cp $ROOT/src/* /etc/lithium/bin/
+sudo cp $ROOT/src/* /etc/lithium/bin/
 
 cd /etc/lithium/bin
 
-chmod +x lithium.sh
+sudo chmod +x lithium.sh
 
-mv lithium.sh /usr/bin/lithium
+sudo mv lithium.sh /usr/bin/lithium
 
 cd /etc/lithium/source
 
-git clone https://github.com/thomasfoster96/lithium.git
+sudo git clone https://github.com/thomasfoster96/lithium.git
 
 cd /etc/lithium/settings
 
-"{
-
-}" > index.html
+"{}" > compilers.json
 
 # Go to /usr/lib and make a place to store modules.
 
 cd /usr/lib
 
-mkdir lithium
+sudo mkdir lithium
 
-cp $ROOT/lib/* /usr/lib/lithium/
+sudo cp $ROOT/lib/* /usr/lib/lithium/
