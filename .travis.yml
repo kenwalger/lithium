@@ -4,7 +4,13 @@ python:
   - "2.7"
   - "3.2"
   - "3.3"
-# command to install dependencies
-install: "./install.sh"
-# command to run tests
-script: "python tests/tests.py"
+
+# command to install.
+install: bash install.sh
+
+# command to run tests.
+script: python tests/tests.py test
+
+branches:
+  only:
+    - master

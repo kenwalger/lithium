@@ -26,9 +26,21 @@ cp $ROOT/docs/* /etc/lithium/docs/
 
 cp $ROOT/src/* /etc/lithium/bin/
 
-cd source
+cd /etc/lithium/bin
+
+chmod +x lithium.sh
+
+mv lithium.sh /usr/bin/lithium
+
+cd /etc/lithium/source
 
 git clone https://github.com/thomasfoster96/lithium.git
+
+cd /etc/lithium/settings
+
+"{
+
+}" > index.html
 
 # Go to /usr/lib and make a place to store modules.
 
