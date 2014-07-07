@@ -22,9 +22,9 @@ sudo mkdir docs
 sudo mkdir settings
 sudo mkdir bin
 
-sudo cp $ROOT/docs/* /etc/lithium/docs/
+sudo cp -R $ROOT/docs/* /etc/lithium/docs/
 
-sudo cp $ROOT/src/* /etc/lithium/bin/
+sudo cp -R $ROOT/src/* /etc/lithium/bin/
 
 cd /etc/lithium/bin
 
@@ -46,4 +46,6 @@ cd /usr/lib
 
 sudo mkdir lithium
 
-sudo cp $ROOT/lib/* /usr/lib/lithium/
+sudo cp -R $ROOT/lib/* /usr/lib/lithium/
+
+exit 0
