@@ -2,12 +2,6 @@ import unittest
 
 from pypkg import core, utils
 
-def run_command(command):
-    p = subprocess.Popen(command,
-                         stdout=subprocess.PIPE,
-                         stderr=subprocess.STDOUT)
-    return iter(p.stdout.readline, b'')
-
 class PypkgTest(unittest.TestCase):
     
     def test_true(self):
@@ -15,8 +9,16 @@ class PypkgTest(unittest.TestCase):
 
 class CoreTest(unittest.TestCase):
 
+	def setUp(self):
+		pass
+
+	def tearDown(self):
+		pass
+
 	def test_echo(self):
-		self.assertEqual("ping", "ping")
+		self.assertEqual("ping", core.echo("ping"))
+		self.assertEqual([1,2], core.echo([1,2]))
+		self.assertEqual({1:2}, core.echo({1:2}))
 
 	def test_fancy_print_returns_none(self):
 		self.assertEqual(None, core.fancy_print("ping"))
