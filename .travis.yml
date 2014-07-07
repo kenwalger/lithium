@@ -1,6 +1,15 @@
-language: node_js
-
-# test on two node.js versions: 0.6 and 0.8
-node_js:
-  - 0.6
-  - 0.8
+---
+language: python
+python:
+  - "2.6"
+  - "2.7"
+  - "3.2"
+  - "3.3"
+  - "3.4"
+  - "pypy"
+install:
+  # development dependencies
+  - pip install -r requirements.txt
+  - pip install --editable .
+# run tests
+script: "nosetests"
