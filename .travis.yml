@@ -7,10 +7,15 @@ python:
   - "3.3"
   - "3.4"
   - "pypy"
+
+before_script:
+  - chmod +x grailsw
+
 install:
   # development dependencies
   - pip install -r tests/requirements.txt
   - pip install --editable .
   - ./install.sh
+
 # run tests
 script: "nosetests"
