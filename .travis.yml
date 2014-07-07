@@ -9,7 +9,7 @@ python:
   - "pypy"
 install:
   # development dependencies
-  - pip install -r requirements.txt
+  - pip install -r tests/requirements.txt
   - pip install --editable .
   - ./install.sh
 # run tests
