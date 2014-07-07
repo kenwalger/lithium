@@ -1,11 +1,8 @@
 #!/bin/bash
 
-if [[ hash oscript 2>/dev/null; ]]; then
-
+if [[ $(hash oscript) -ne /dev/null ]]; then
 	osascript install/mac-os-x.applescript
-
 	exit 0;
-
 fi	
 
 ROOT=$(dirname $(echo $(lsof -p $$ | grep -E "/"$(basename $0)"$") | sed -r s/'^([^\/]+)\/'/'\/'/1 2>/dev/null))
