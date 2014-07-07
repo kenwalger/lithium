@@ -12,7 +12,7 @@ setup(
 
     # Versions should comply with PEP440. For single-sourced versioning, see
     # http://packaging.python.org/en/latest/tutorial.html#version
-    version=version,
+    version= '0.0.1',
 
     description='A sample Python project',
     long_description='Hi',
@@ -57,7 +57,7 @@ setup(
 
     # You can just specify the packages manually here if your project is
     # simple. Or you can use find_packages().
-    packages=find_packages(exclude=['contrib', 'docs', 'tests*']),
+    packages=find_packages(exclude=['docs', 'tests*']),
 
     # Run-time package dependencies. These will be installed by pip when your
     # project is installed.
@@ -69,14 +69,5 @@ setup(
     # then these have to be included in MANIFEST.in as well.
     package_data={
         'src': ['package_data.dat'],
-    },
-
-    # To provide executable scripts, use entry points in preference to the
-    # "scripts" keyword. Entry points provide cross-platform support and allow
-    # pip to create the appropriate form of executable for the target platform.
-    entry_points={
-        'console_scripts': [
-            'pypkg=src.main:main',
-        ],
-    },
+    }
 )
