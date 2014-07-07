@@ -1,11 +1,5 @@
 from setuptools import setup, find_packages
 import codecs
-import os
-
-here = os.path.abspath(os.path.dirname(__file__))
-
-version_file = open(os.path.join(here, 'src', 'VERSION'))
-version = version_file.read().strip()
 
 setup(
     name='src',
@@ -26,38 +20,12 @@ setup(
 
     # Choose your license
     license='MIT',
-
-    # See https://pypi.python.org/pypi?%3Aaction=list_classifiers
-    classifiers=[
-        # https://pypi.python.org/pypi?%3Aaction=list_classifiers
-        # Project maturity. 
-        'Development Status :: 4 - Beta',
-
-        # Intended audience
-        'Intended Audience :: Developers',
-
-        # Topic
-        'Topic :: Software Development :: Build Tools',
-
-        # License should match "license" above
-        'License :: OSI Approved :: MIT License',
-
-        # Python versions supported
-        'Programming Language :: Python :: 2',
-        'Programming Language :: Python :: 2.6',
-        'Programming Language :: Python :: 2.7',
-        'Programming Language :: Python :: 3',
-        'Programming Language :: Python :: 3.2',
-        'Programming Language :: Python :: 3.3',
-        'Programming Language :: Python :: 3.4',
-    ],
-
     # What does your project relate to?
     keywords='pypkg setuptools development',
 
     # You can just specify the packages manually here if your project is
     # simple. Or you can use find_packages().
-    packages=find_packages(exclude=['docs', 'tests*']),
+    packages=['src', 'src'],
 
     # Run-time package dependencies. These will be installed by pip when your
     # project is installed.
