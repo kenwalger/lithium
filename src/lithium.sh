@@ -5,13 +5,19 @@ if [[ $1 -eq "help" ]]; then
   echo $(/etc/lithium/bin/help.sh $2 $3);
 
   exit 0;
+
+fi
   
-elif [[ $1 -eq "compile" ]]; then
+if [[ $1 -eq "compile" ]]; then
+
+fi
   
-elif [[ $1 -eq "translate" ]]
+if [[ $1 -eq "translate" ]]
 then
 
-elif [[ $1 -eq "install" ]]
+fi
+
+if [[ $1 -eq "install" ]]
 then
 
   if [[ $2 -eq "package" ]]
@@ -31,9 +37,10 @@ then
 
     ./install.sh
 
-  elif
+  fi
+fi
   
-elif [ $1 -eq "update" ]
+if [ $1 -eq "update" ]
 then
 
   cd /etc/lithium/repo
@@ -41,10 +48,14 @@ then
   git clone git://github.com/thomasjamesfoster96/lithium.git
   src/update.sh
   
-elif [ $1 -eq "run" ]
+fi
+
+if [ $1 -eq "run" ]
 then
 
-elif [ $1 -eq "settings" ]
+fi
+
+if [ $1 -eq "settings" ]
 then
 
   vim /etc/lithium/settings.conf
