@@ -1,14 +1,12 @@
 #!/bin/bash
 
-if [[ $1 -eq "help" ]]
-then
+if [[ $1 -eq "help" ]]; then
 
-  /etc/lithium/bin/help.sh $2 $3 $4 $5
+  echo $(/etc/lithium/bin/help.sh $2 $3);
 
   exit 0;
   
-elif [[ $1 -eq "compile" ]]
-then
+elif [[ $1 -eq "compile" ]]; then
   
 elif [[ $1 -eq "translate" ]]
 then
