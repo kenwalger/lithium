@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [[ $1 -eq "help" ]]; then
+if [ $1 -eq "help" ]; then
 
   echo $(/etc/lithium/bin/help.sh $2 $3);
 
@@ -8,19 +8,19 @@ if [[ $1 -eq "help" ]]; then
 
 fi
   
-if [[ $1 -eq "compile" ]]; then
+if [ $1 -eq "compile" ]; then
 
 fi
   
-if [[ $1 -eq "translate" ]]
+if [ $1 -eq "translate" ]
 then
 
 fi
 
-if [[ $1 -eq "install" ]]
+if [ $1 -eq "install" ]
 then
 
-  if [[ $2 -eq "package" ]]
+  if [ $2 -eq "package" ]
   then
 
     IFS"/" && githubrepo=($3)
