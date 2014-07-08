@@ -1,20 +1,22 @@
 #!/bin/bash
 
-if [ $1 -eq "help" ]
+if [[ $1 -eq "help" ]]
 then
 
   /etc/lithium/bin/help.sh $2 $3 $4 $5
+
+  exit 0;
   
-elif [ $1 -eq "compile" ]
+elif [[ $1 -eq "compile" ]]
 then
   
-elif [ $1 -eq "translate" ]
+elif [[ $1 -eq "translate" ]]
 then
 
-elif [ $1 -eq "install" ]
+elif [[ $1 -eq "install" ]]
 then
 
-  if [ $2 -eq "package" ]
+  if [[ $2 -eq "package" ]]
   then
 
     IFS"/" && githubrepo=($3)
