@@ -2,30 +2,35 @@
 
 if [ $1 -eq "help" ]
 then
-  /etc/lithium/help.sh $2 $3
+
+  /etc/lithium/bin/help.sh $2 $3 $4 $5
+  
 elif [ $1 -eq "compile" ]
 then
   
 elif [ $1 -eq "translate" ]
 then
 
-elif [ $1 -eq "modules" ]
+elif [ $1 -eq "install" ]
 then
 
-  if [ $2 -eq "install" ]
+  if [ $2 -eq "package" ]
   then
 
-    if ! [[ $2 =~ [^a-zA-Z0-9] ]]
-    then
-  
-    else
-    then
-    
-      cd /etc/lithium/pachages
-      git clone $2
-    
-    fi
-    
+    IFS"/" && githubrepo=($3)
+
+    cd /etc/lithium/packages
+
+    mkdir $($githubrepo[0])
+
+    cd $($githubrepo[0])
+
+    git clone https://github.com/$(3)
+
+    chmod +x install.sh
+
+    ./install.sh
+
   elif
   
 elif [ $1 -eq "update" ]

@@ -60,7 +60,6 @@ echo "Lithium has been installed. Use the lithium help to get help from here on 
 
 read -p "Install lithium-to-javascript as well? " answer
 
-# (2) handle the command line argument we were given
 while true
 do
   case $answer in
