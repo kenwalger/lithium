@@ -48,7 +48,13 @@ echo "Initialising settings..."
 
 cd /etc/lithium/settings
 
-sudo "{}" > compilers.json
+sudo cat > translators.json <<MEDIA
+{
+    "javascript" : [{
+        	"run" 
+        }]
+}
+MEDIA
 
 echo "Installing standard library packages..."
 
