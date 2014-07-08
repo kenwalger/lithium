@@ -15,7 +15,7 @@ class HelpTest(unittest.TestCase):
 		 	"", "--package <name> for help with a Lithium package", "", \
 			"--error <number> for help with an error message", "", \
 			"--action <task> for help with a common task, such as translating",\
-			 "", "--quit to quit Lithium help", ""
+			 "", "--quit to quit Lithium help", ""]
 
 		reality = os.popen("lithium help").readlines()
 

@@ -36,6 +36,8 @@ cd /etc/lithium/bin
 
 sudo chmod +x lithium.sh
 
+sudo chmod +x help.sh
+
 sudo mv lithium.sh /usr/bin/lithium
 
 cd /etc/lithium/source
