@@ -11,10 +11,7 @@ before_install:
   - chmod +x install.sh
 
 install:
-  # development dependencies
   - pip install -r tests/requirements.txt
-  - pip install --editable .
   - ./install.sh
 
-# run tests
 script: "nosetests"
