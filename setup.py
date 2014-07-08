@@ -19,8 +19,9 @@ setup(
 
     # Choose your license
     license='MIT',
+    
     # What does your project relate to?
-    keywords='pypkg setuptools development'
+    keywords='pypkg setuptools development',
 
     # Run-time package dependencies. These will be installed by pip when your
     # project is installed.
