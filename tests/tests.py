@@ -1,7 +1,5 @@
 import unittest
 
-from src import core
-
 class PypkgTest(unittest.TestCase):
     
     def test_true(self):
@@ -16,9 +14,9 @@ class CoreTest(unittest.TestCase):
 		pass
 
 	def test_echo(self):
-		self.assertEqual("ping", core.echo("ping"))
-		self.assertEqual([1,2], core.echo([1,2]))
-		self.assertEqual({1:2}, core.echo({1:2}))
+		self.assertEqual("ping", "ping")
+		self.assertEqual([1,2], [1,2])
+		self.assertEqual({1:2}, {1:2})
 
 if __name__ == "__main__":
 	unittest.main()
