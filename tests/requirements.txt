@@ -1,7 +1,0 @@
-# development requirements
-py
-pytest
-pytest-cov
-wheel
-nose
-twine
