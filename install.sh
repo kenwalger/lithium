@@ -58,22 +58,9 @@ sudo cp -R $ROOT/lib/* /usr/lib/lithium/
 
 echo "Lithium has been installed. Use the lithium help to get help from here on in."
 
-read -p "Install lithium-to-javascript as well? " answer
+echo "Installing lithium-to-javascript..."
 
-while true
-do
-  case $answer in
-   [yY]* ) 
-           echo "Installing lithium-to-javascript..."
-           break;;
-
-   [nN]* ) exit 0;;
-
-   * )     echo "Enter Y or N, please."; break ;;
-  esac
-done
-
-cd /usr/lib/lithium
+cd /etc/lithium/compilers
 
 sudo mkdir lithium-to-javascript
 
