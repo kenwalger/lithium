@@ -34,9 +34,7 @@ echo "Installing commands..."
 
 cd /etc/lithium/bin
 
-sudo chmod +x lithium.sh
-
-sudo chmod +x help.sh
+sudo chmod +x lithium.py
 
 sudo mv lithium.sh /usr/bin/lithium
 
@@ -51,7 +49,8 @@ cd /etc/lithium/settings
 sudo cat > translators.json <<MEDIA
 {
     "javascript" : [{
-        	"run" 
+        	"run" : "li2js --run",
+        	"translate" : "li2js --translate"
         }]
 }
 MEDIA

@@ -11,7 +11,7 @@ before_install:
   - chmod +x install.sh
 
 install:
-  - pip install -r tests/requirements.txt
   - ./install.sh
 
-script: "nosetests"
+script:
+  - lithium help
