@@ -1,34 +1,35 @@
 ROADMAP
 =======
 
-This file just contains a list of features for future releases that contributors can help work on. Try and create an issue on GitHub and tag it as a 'feature request' to get it on here. From here, features for the next release are added to the [TODO.md](TODO.md) file, alongside any bug fixes that are needed.
+This file just contains a list of features for future releases that contributors can help work on. Try and create an issue on GitHub and tag it as a 'feature request' to get it on here. Pull requests for the next patch version will generally go into the develop branch, pull requests for the next minor release will go into the minor.next branch, while pull requests for the next major release will go into the major. From here, features for the next patch, minor and major releases are added to the [TODO.md](TODO.md) file, alongside bug fixes that are needed.
 
-## Version 0.0.0
+## 0.0.0
 
-*   __Types__
-   
-    `int`, `str`, `var`, `dec`, `list`, `dict`, `obj`, `class`, `set`, `fn`, `const`.
+*   Working implementation of Li to JS translator.
 
-    Lithium 0.0.0 should support the eleven types above. Each type is referred to by a two to five letter abbreviation. `var` is a special type in that it can be of any type. 
+## 0.1.0
 
-*   __Arithmatic__
- 
-    `+`, `-`, `/`, `×`, `÷`, `√`, etc.
+*   Language documentation.
+*   Command line tools finished.
 
-*   __Statements__
+## 0.2.0
 
-    `if`, `else`, `while`, `until`, `for`, etc.
+*   Standard Library filled out.
 
-*   __Built-in functions__
+## 0.3.0
 
-    `sin()`, `cos()`, etc.
+*   Standard Library documented.
+*   REPL.
 
-*   __Built-in constants__
+## 1.0.0
 
-    `π`, `e`, `φ`.
+*   Self Hosting compiler.
+*   Package managemer included.
+*   Linux, Mac OS X and Windows support.
+*   Translate, target and compilers management finished.
 
-## Version 1.0.0
+## 2.0.0
 
-*   __Docs in HTML__
-
-    As noted in [#1](https://github.com/thomasjamesfoster96/lithium/issues/1), the docs for Lithium should be in, or be easily made available, in HTML.
+*   Macros (!).
+*   Proper prototyping.
+*   Constraint assignment (like VFL for Apple Autolayout).
