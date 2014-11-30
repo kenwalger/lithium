@@ -4,76 +4,67 @@ Lithium
 Contents
 --------
 
-*   [What's Lithium?](#whats-lithium)
-*   [Syntax and Design](#syntax-and-design)
-*   [Features](#features)
-*   [License](#license)
-*   [Using Lithium](#using-lithium)
-*   [Roadmap and TODOs](#roadmap-and-todos)
-*   [FAQ](#faq)
+*   About Lithium
+*   Philosophy
+*   License
+*   Using Lithium
+*   Roadmap and TODOs
+*   FAQ
 
-What's Lithium?
----------------
+About Lithium
+-------------
 
-Lithium is sort of like a four-way mash between JavaScript, Python, Ruby and the maths you learnt in high school. Most people should be able to understand it within an hour, assuming they have a bit of experience with programming.
+Lithium is sort of like a four-way mash between JavaScript, Python, Ruby and the maths you learnt in high school. Most people should be able to understand it within an hour, assuming they 
 
-The name Lithium comes from, well, the element lithium. Lithium is the lightest metal, yet powers everything from your laptop to your phone to torches to cars. This is sort of the aim with Lithium - create something which is lightweight and can be used almost anywhere.
+The name Lithium comes from, well, the element Lithium. Lithium is the lightest metal, yet powers everything from your laptop to your phone to torches to cars. This is sort of the aim with Lithium - create something which is lightweight and can be used almost anywhere.
 
-Syntax and Design
------------------
+Philosophy
+----------
 
-Lithium's syntax has a few ideas in mind:
-* Code is written once but read many times.
-* Simple programs should only require a simple understanding of the language to read and write.
-* Be feature rich, but not feature heavy.
-* Follow standards where practical.
-* Everyone's use of the language will be different.
+The so-called 'design philosophy' behind Lithium is fairly similar to that behind Python, but there are some differences. Drawing from the well known "[The Zen of Python](http://www.python.org/dev/peps/pep-0020/)" by Tim Peters, these are some principles in designing the Lithium language:
 
-While Lithium should be something you can quickly write and use, _we are_ prepared to sacrifice a little bit of speed of coding for speed of understanding later on. Whilst it might be a few seconds quicker to write code one way, it is probably better to sacrifice those few seconds now so that they don't turn into hours later on.
+> Beautiful is better than ugly.
+> People make mistakes so be accomodating.
+> Simple is better than complex is better than complicated.
+> Code will be read more than it will be written.
+> Good ideas are easily explained, bad ideas aren't.
+> Would your grandparents understand it?
+> Best practices can be forced.
+> Don't write any more than you should.
+> Not everyone speaks en_US.
+> Can you teach it to a highschool class?
+> Don't make people use more features than they need.
+> Keep it simple.
+> How have other people done it?
 
-Simple Lithium programs, such as a "Hello World!" example, shouldn't be any longer than they need to be. A Hello World! program only outputs a line of text, so why should the program itself be longer than one line? Keeping Lithium lightweight ultimately makes Lithium code easier to learn, more readable and easier to work with.
-
-Lithium should be feature rich, not feature heavy. This means that there should be lots of features to use, but these shouldn't impact someone who doesn't need to use them. They shouldn't make Lithium any slower by being there, nor should someone need to use more features than they should.
-
-Lithium also follows widely accepted standards where possible. The Units feature, for example, only works with SI units. If Lithium works with standards in the worlds of Maths or Science, it should make Lithium much more useful.
-
-Finally, everyone will use Lithium in a different way. Things should be done in a way that suits everyone's needs and requirements.
-
-Features
---------
-
-These are better explained in the docs but features include:
-* Units.
-* Varied data types such as `int`, `dec`, `str`, `bool`, etc.
-* `for`, `while`, `until`, `if`, `else`, and all that stuff.
-* Functions are first class objects.
-* Classes and prototyping.
+We like to think that Lithium follows these ideals. For example, even if you have to learn a few keyboard tricks to imput a character or whatnot, you'll appreciate clarity of the code when you revisit it in 18 months.
 
 License
 -------
 
-Lithium is licensed under the MIT License. You can find a copy in the [LICENSE.md](./LICENSE.md) file included in this directory.
+Lithium is licensed under the MIT License. You can find a copy in the [LICENSE.md](LICENSE.md) file included in this directory.
+
 
 Using Lithium
 -------------
 
-This repository simple includes documentation for Lithium. Actual implementations are coming soon.
+Lithium can theoretically be used in standalone applications, server-side scripting as well as in client-side scripting. There is a reference implementation of the Lithium spec that transcompiles Lithium to JavaScript.
 
-Roadmap and TODOs
+Roadmap and TODOS
 -----------------
 
-Lithium is intended to be a continually evolving language. Anyone (developers using Lithium, contributors to a Lithium implementation or contributors to this spec) is invited to submit feature requests as an issue on Github with the label 'feature request'. Accepted feature requests will make it to the [ROADMAP.md](./ROADMAP.md) file.
+Lithium is intended to be a continually evolving language. Anyone (developers using Lithium, contributors to a Lithium implementation or contributors to this spec) is invited to submit feature requests as an issue on Github with the label 'feature request'. Accepted feature requests will make it to the [ROADMAP.md](ROADMAP.md) file.
 
-The [TODO.md](./TODO.md) file has a list of features and bigfixes needed for the next release. If you want to contribute, that's a good place to start.
+The [TODO.md](TODO.md) file has a list of features and bigfixes needed for the next release. If you want to contribute, that's a good place to start.
 
 Versioning
 ----------
 
-Lithium roughly follows the [Semantic Versioning](http://semver.org/) standard., but not perfectly. Releases are available at the [project's releases page](https://github.com/thomasjamesfoster96/lithium/releases). They follow the `major.minor.patch` scheme.
+Lithium is released as 'snapshots' that are given a version number based on the scheme of `major.minor.fix`. A major release is one that removes features or radically adds or changes other features. A minor release adds features or deprecates (but doesn't remove) others. A fix release is only for security or bug fixes.
 
-Major versions are for when backwards compatabilty with the previous version is broken, such as a major redesign or the removal of any features. Minor versions are releases when features are added or deprecated, and retain backwards compatability. Patches are releases to fix bugs or typos.
+The first version of Lithium is 0.0.0, but version 1.0.0 will be the first version that is ready for production use.
 
 Contributing
 ------------
 
-Anyone can help out! Check out [CONTRIBUTING.md](./CONTRIBUTING.md) for more information.
+Anyone can help out! Check out CONTRIBUTING.md for more information.

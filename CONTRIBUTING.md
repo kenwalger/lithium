@@ -3,28 +3,26 @@ CONTRIBUTING
 
 Anyone can contribute to Lithium, so long as you don't break anything on purpose. 
 
-This repository is mostly written in Markdown, which is for those who don't know, sort like fancy plain text. Check out John Gruber's Markdown [syntax post on Daring Fireball](http://daringfireball.net/projects/markdown/syntax) for the most complete tutorial out there. Because this project is on Github, we also use [Github Flavoured Markdown](https://help.github.com/articles/github-flavored-markdown), which is an extension of Markdown.
+This repository is mostly in Markdown, which is just fancy text. Check out John Gruber's Markdown [syntax post on Daring Fireball](http://daringfireball.net/projects/markdown/syntax) for the most complete tutorial out there. Where there is not much of a choice, we also use [Github Flavoured Markdown](https://help.github.com/articles/github-flavored-markdown), which is just an extension of plain old Markdown.
 
 Branches
 --------
 
-At the moment we only use one branch, that being the `master` branch. As you can't really 'break' Markdown, there isn't really a need at the moment to use multiple branches. However, there is a chance we might use them in the future.
+Within the repository there are several branches. Any development happens in the `develop` branch. The `master` branch contains the latest stable version, while there is a branch for each previous release named using a `major.minor.fix` versioning scheme.
 
-If you head over to [releases](https://github.com/thomasjamesfoster96/lithium/releases) you'll find released versions of Lithium.
+If you are committing changes, please do so into the `develop` branch. Many people mistakenly try and commit to the `master` branch, so make sure you are careful :).
 
 Bug Fixes
 ---------
 
-If you find any sort of error, spelling mistak, etc. in this project, feel free to fix it and submit a pull request with your commit. Little fixes like this are welcomed and are usually accepted pretty quickly.
-
-If you've got time, there is also usually a list of bugs that need to be fixed in the [TODO.md](TODO.md) file.
+If you find any sort of error, spelling mistak, etc. in this project, feel free to fix it and submit a pull request with your commit. There is also usually a list of bugs that need to be fixed in the [TODO.md](TODO.md) file.
 
 Feature Additions/Removals
 --------------------------
 
 Features aren't added or removed simply at the whim of any one contributor. So that we don't end up with a bloated language, we request that you open any feature requests as an issue tagged as 'feature request' first. After a period (could be a few days, could be a month) of discussion, the feature may be added to the ROADMAP.md and/or TODO.md files. Generally, a feature will be added in the next minor release, but a radical new feature may instead be added at the next major release.
 
-The same protocol follows for removing features. Features will be deprecated (meaning that users of the feature should be planning for its removal) after the next minor release, but not removed. A feature will only be removed at the next major release. This is so that users of Lithium should only worry about their code having combatability issues at a major release.
+The same protocol follows for removing features. Features will be deprecated after the next minor release, but not removed. A feature will only be removed at the next major release. This is mainly because users of Lithium should only worry about their code having combatability issues at a major release.
 
 Code Style
 ----------

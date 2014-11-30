@@ -31,7 +31,7 @@ Most things.
 
 ### What can't I use Lithium for?
 
-Anything illegal.
+Anythign illegal.
 
 ### Is Lithium NSA-proof?
 
