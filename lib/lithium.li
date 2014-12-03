@@ -1,0 +1,4 @@
+
+ASSIGN( comma , MACRO( ',' , ',' ) )
+
+ASSIGN( AssignmentStatement , MACRO(  ) )
