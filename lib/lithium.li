@@ -2,3 +2,5 @@
 ASSIGN( comma , MACRO( ',' , ',' ) )
 
 ASSIGN( AssignmentStatement , MACRO(  ) )
+
+macro ForStatement := '\n' {whitespace}* 'for' {whitespace}* '(' ')' 
