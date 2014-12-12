@@ -1,8 +1,0 @@
-assign(macro('Newline[:Whitespace]{0,}(Identifier)[:Whitespace]{1,}(Identifier)[:Whitespace]{1,}["=":":="][:Whitespace]{0,}(String)Newline', function(string[] matches, do(
-	if(equal(), '')
-	return('assign')
-))))
-
-ASSIGN( AssignmentStatement , MACRO(  ) )
-
-macro ForStatement := '\n' {whitespace}* 'for' {whitespace}* '(' ')' 

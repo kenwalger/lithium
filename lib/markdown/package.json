@@ -1,9 +1,0 @@
-{
-  "name" : "markdown",
-  "version" : "1.0.1",
-  "keywords" : ["markdown", "md"],
-  "description" : "The markdown package included as a part of the Lithium standard library.",
-  "bugs" : {
-    "url" : "https://github.com/thomasfoster96/lithium/issues"
-  }
-}
