@@ -5,11 +5,25 @@ Lithium
 
 ### What's Lithium?
 
-Lithium is a programming language design fo
+Lithium is a programming language that is designed to be easy to re-implement, reduce gotchas, be easy to read, *<insert buzz-word here>*.
+
+It's got some pretty nice features that seem to be all the rage these days, such as a reference implementation that compiles to JavaScript and LISP-style macros. 
+
+The language is based on a very small group of functions and objects, and the rest of the language is then built up using macros, subclassing and new function definitions.
 
 ### What does it look like?
 
 This is a fairly basic bit of Lithium code:
+
+```lithium
+process.stdout.write("Hello World!") 
+
+# Oh look, a comment! 
+
+unless os.cpus.length = 1
+	process.fork()
+	
+```
 
 ### How do I use it?
 
