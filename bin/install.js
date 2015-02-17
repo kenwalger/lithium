@@ -1,17 +1,20 @@
 #!/usr/bin/env node
 
-var path = require('path');
-var fs   = require('fs');
-var liDir = path.join(path.dirname(fs.realpathSync(__filename)), '../../../');
+var exec = require('child_process').exec;
+var fs = require('fs');
 
-var configTargets = JSON.parse(fs.readFileSync(liDir + 'config/targets.json'));
-configTargets["JavaScript"].push({
-	"name" : "li2js",
-	"js" : {
-		"raw" : "compile($raw)"
-	},
-	"bash" : {
-		"raw" : "compile $file"
-	}
-});
-fs.writeFileSync(liDir + 'config/targets.json', JSON.stringify(configTargets));
+fs.mkdirSync("/usr/local/lib/lithium_packages");
+fs.mkdirSync("/etc/lithium");
+fs.mkdirSync("/etc/lithium/implementations");
+fs.mkdirSync("/etc/lithium/implementations/lithium.js");
+fs.mkdirSync("/etc/lithium/implementations/lithium.js/temporary");
+
+fs.writeFileSync("/etc/lithium/targets.json", JSON.stringify({}));
+fs.writeFileSync("/etc/lithium/parsers.json", JSON.stringify({}));
+fs.writeFileSync("/etc/lithium/interpreters.json", JSON.stringify({}));
+fs.writeFileSync("/etc/lithium/compilers.json", JSON.stringify({}));
+
+process.chdir('/etc/lithium/implementations/lithium.js/temporary');
+
+exec("git clone https://github.com/thomasfoster96/lithium.js.git");
+exec("npm install");

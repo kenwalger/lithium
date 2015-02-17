@@ -13,16 +13,21 @@ The language is based on a very small group of functions and objects, and the re
 
 ### What does it look like?
 
-This is a fairly basic bit of Lithium code:
+This is some fairly basic Lithium code:
 
 ```lithium
 process.stdout.write("Hello World!") 
 
 # Oh look, a comment! 
 
-unless os.cpus.length = 1
+unless (os.cpus.length = 1)
 	process.fork()
-	
+
+int random = 28484923
+
+obj test
+
+str wot = JSON.stringify(obj)	
 ```
 
 ### How do I use it?
@@ -32,17 +37,21 @@ Lithium is currently distributed as a [npm](https://npm.org/) package, which inc
 If you've installed the Lithium package, you can use Lithium int he following ways:
 
 *   Run the Lithium REPL by typing the following at the command line:
-  
-    `lithium`
+    ```bash
+	lithium
+	```
 
 *   Run or translate Lithium in your Node.js app by requiring it as so:
 
-    `var lithium = require('lithium');`
+    ```js
+	var lithium = require('lithium');
+	```
 
 *   Use Lithium in the browser by including the lithium.js build:
 
-    `<script src="/path/to/lithium.js"></script>`
-
-	and then later on:
-  
-    `<script type="text/lithium"> doSomething() </script>`
+    ```html
+	<script src="/path/to/lithium.js"></script> 
+    <script type="text/lithium"> 
+	doSomething() 
+	</script>
+	```

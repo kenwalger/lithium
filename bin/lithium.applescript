@@ -1,5 +1,5 @@
-on run this_file
-	
-	-- TODO: Make this work.
+-- TODO: Optional Applescript executable for Mac OS X scripting?
+
+on run options
 
 end run
