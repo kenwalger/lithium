@@ -1,15 +1,18 @@
 Lithium
 -------
 
-***Note: Lithium is currently under heavy, unfinished development and isn't usable yet.***
+**Note: Lithium is currently under heavy, unfinished development and isn't usable yet. If you're interested, my email address is on my profile page.**
+
+This repo contains the Lithium standard library, a REPL and some command line tools to work with various implementations of Lithium. I ([Thomas Foster](http://thomasfoster.co/)) am personally working to an extent on two implementations of Lithium:
+
+* [li.js](http://github.com/thomasfoster96/li.jsjs) - li.js transpiles/compiles Lithium code to ECMAScript 6/7 code. Babel, Browserify and Uglify are used by li.js to 
+* [lillvm](http://github.com/thomasfoster96/lillvm) - lillvm compiles Lithium to LLVM IR code. li.js is probably much more stable than lillvm.
 
 ### What's Lithium?
 
-Lithium is a programming language that is designed to be easy to re-implement, reduce gotchas, be easy to read, *<insert buzz-word here>*.
+Lithium is a programming language that is designed to be easy to re-implement, reduce gotchas, be easy to read, *<insert buzz-word here>*. It's got some pretty nice features that seem to be all the rage these days, such as a reference implementation that compiles to JavaScript and LISP-style macros.
 
-It's got some pretty nice features that seem to be all the rage these days, such as a reference implementation that compiles to JavaScript and LISP-style macros. 
-
-The language is based on a very small group of functions and objects, and the rest of the language is then built up using macros, subclassing and new function definitions.
+The language is based on a very small group of functions and objects, and the rest of the language is then built up using macros, subclassing and new function definitions. It's kinda like a universal assembly language with macros.
 
 ### What does it look like?
 
@@ -34,24 +37,10 @@ str wot = JSON.stringify(obj)
 
 Lithium is currently distributed as a [npm](https://npm.org/) package, which includes the `lithium` command line tool. 
 
-If you've installed the Lithium package, you can use Lithium int he following ways:
+If you've installed the Lithium package, you can use Lithium in the following ways:
 
-*   Run the Lithium REPL by typing the following at the command line:
-    ```bash
-	lithium
-	```
-
-*   Run or translate Lithium in your Node.js app by requiring it as so:
-
-    ```js
-	var lithium = require('lithium');
-	```
-
-*   Use Lithium in the browser by including the lithium.js build:
-
-    ```html
-	<script src="/path/to/lithium.js"></script> 
-    <script type="text/lithium"> 
-	doSomething() 
-	</script>
-	```
+* Run the Lithium REPL by typing the following at the command line:
+  ```bash
+  lithium
+  ```
+      
