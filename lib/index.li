@@ -1,0 +1,12 @@
+macro('whitespace', '(" " | "	")', function([ws], do(return(ws)))),
+macro('function-call', '(variable), "(", ")"', function(name, variables, do(return(variable))))),
+macro('comment', '"#", anything, newline', function([], do(return('')))),
+
+# The previous line just specified a macro that makes comments possible. The comments macro maps a '#' followed by anything until a newline to nothing.
+# The line before that specified the format for a function call (called a function-call because a macro name can't contain a space).
+# The line before that specified 
+
+macro('assignment', '(variable) [{whitespace}] "=", [{whitespace}], expression', function([name,value], do(return('assign(' name ',' value ')')))),
+
+# Instead of using assign(name, value), we can now do a fancy variable = value thing.
+

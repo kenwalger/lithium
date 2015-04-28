@@ -1,6 +1,6 @@
 # Versioning
 
-Lithium roughly follows the [Semantic Versioning specification](http://semver.org/), but below is a quick recap and more information specific to the Lithium project:
+Lithium roughly follows the [Semantic Versioning specification](http://semver.org/), but below is a quick recap and more information specific to Lithium:
 
 ### Version Numbers
 
@@ -14,8 +14,8 @@ Patches, such as documentation edits and code optimisation/bugfixes, will usuall
 
 ### Will version X work for me?
 
-If the version of Lithium you currently use has the same major and minor version numbers as the latest release, you should be able to upgrade without any side effects. If you were relying on an undocumented or broken feature you may have problems if these are fixed, but this will be rare.
+If the version of Lithium you currently use has the same major and minor version numbers as the latest release, you should be able to upgrade without any side effects. If you were relying on an undocumented or broken feature you may have problems if these are fixed or changed, but this will be rare.
 
-If the minor version numbers of your current version and the current release differ, you may want to check the changelog to see if you'll have problems. Features may be deprecated or added between minor versions. This may mean that a feature you are using might not be supported any more, or the name of a new feature might conflict with the name of a variable you've been using.
+If the minor version numbers of your current version and the current release differ, you may want to check the changelog to see if you'll have problems. Features may be deprecated or added between minor versions. This may mean that a feature you are using might not be supported any more (it will still be there, but it won't be maintained and may be buggy), or the name of a new feature might conflict with the name of a variable you've been using.
 
-The major version number will only be incremented if a change will break backwards compatability. When this happens, you'll almost certainly have to change your code or integrations with Lithium. 
+The major version number will only be incremented if a change will break backwards compatability. When this happens, you'll almost certainly have to change your some part of your code or integrations with Lithium. 

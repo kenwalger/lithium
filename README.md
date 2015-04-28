@@ -10,9 +10,9 @@ This repo contains the Lithium standard library, a REPL and some command line to
 
 ### What's Lithium?
 
-Lithium is a programming language that is designed to be easy to re-implement, reduce gotchas, be easy to read, *<insert buzz-word here>*. It's got some pretty nice features that seem to be all the rage these days, such as a reference implementation that compiles to JavaScript and LISP-style macros.
+Lithium is a programming language that is designed to be easy to re-implement, reduce gotchas, be easy to read, *<insert buzz-word here>*. It's got some pretty nice features that seem to be all the rage these days, such as a reference implementation that compiles to JavaScript and things that LISP has been doing for 50+ years.
 
-The language is based on a very small group of functions and objects, and the rest of the language is then built up using macros, subclassing and new function definitions. It's kinda like a universal assembly language with macros.
+The language is based on a very small group of functions and objects, and the rest of the language is then built up using macros, subclassing and new function definitions. 
 
 ### What does it look like?
 

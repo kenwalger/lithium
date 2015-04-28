@@ -127,8 +127,6 @@ if(options.help){
 		var streamOut = process.stdout;
 	}
 
-	compiler.
-
 	streamIn.pipe(compiler.stdin);
 
 	compiler.stdout.pipe(streamOut);
@@ -163,6 +161,4 @@ if(options.help){
 
 	var repl = lithium.repl();
 
-}else{
-	console.log("Error: Incorrect CLI usage.");
 }
