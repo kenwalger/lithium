@@ -1,3 +1,4 @@
+macro('variable', '', function([], do(return()))),
 macro('whitespace', '(" " | "	")', function([ws], do(return(ws)))),
 macro('function-call', '(variable), "(", ")"', function(name, variables, do(return(variable))))),
 macro('comment', '"#", anything, newline', function([], do(return('')))),

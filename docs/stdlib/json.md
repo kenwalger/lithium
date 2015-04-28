@@ -1,6 +1,10 @@
 # JSON
 
+The JSON module almost exactly mirrors the JSON object found in ECMAScript and JavaScript. `JSON.parse` does what it would be expected to, and `JSON.stringify` works exactly as you'd expect it too.
+
 ### `JSON.parse(string text [, function reviver(string key, any value)])`
+
+`JSON.parse` parses a string containing JSON data and returns the representation of the object encoded in the JSON string as a native Lithium value.
 
 ##### Parameters:
 
@@ -9,10 +13,16 @@
 
 ##### Returns:
 
-`JSON.parse()` can return any value. Usually it will return a plain `Object` or an `Array` with element type `any`.
+`JSON.parse()` can return any value. Usually it will return a plain `Object` or an `Array` with element type `any`, but it can also return a `Number` or a `String`.
 
-### `JSON.stringify()
+### `JSON.stringify(any object [, function replacer [, string|number space]])`
 
 ##### Parameters:
 
-* `any
+* `any` **`object`** - 
+* `function` **`replacer`** - 
+* `string|number` **`space`** - 
+
+##### Returns:
+
+`JSON.stringify` will always return a valid JSON string, or it will throw an error. 
