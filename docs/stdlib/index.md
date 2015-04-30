@@ -9,9 +9,11 @@
     Simple module for Base64 encoding and decoding. Includes URL safe encoding.
 *   [Buffer](./buffer.md)
 *	[Cluster](./cluster.md)
+    Similar to the node.js/io.js cluster module, this module lets you run the same program on several different cores to simply take advantage of multi-core systems.
 *	[Crypto](./crypto.md)
 *	[CSV](./csv.md)
 *	[Date](./date.md)
+    A module for dealing with dates and calendar related things. For timescales less than a few hours, the time modules is a better choice.
 *	[DNS](./dns.md)
 *   [DOM](./dom.md)
     A module that imitates a number of web platform APIs. Also used by the HTML and XML modules to provide a `document`.
@@ -21,6 +23,8 @@
     A comprehensive cross-platform file system module.
 *	[Foreign Function Interface](./ffi.md)
 	A generic foreign function interface module.
+*   [Geo](./geo.md)
+*   [GeoJSON](./geojson.md)
 *   [HTML](./html.md)
     Module for parsing and serializing HTML.
 *   [HTTP](./http.md)
@@ -34,8 +38,11 @@
 	Basic math is builtin, but anything slightly complicated is in this module.
 *	[MathML](./mathml.md)
 	A module for doing things with MathML.
+*   [MIME Types](./mime.md)
 *	[Natural Language Processing](./nlp.md)
+    Various natural language processing tools.
 *	[Neural Networks](./neuralnets.md)
+*   Feed-forward and recurrent neural networks.
 *	[OAuth](./oauth.md)
 * 	[Path](./path.md)
 	A utiliy for resolving and generally using local paths.
@@ -59,9 +66,16 @@
 *	[Time](./time.md)
 *	[Timers](./timers.md)
 *   [TLS](./tls.md)
-*	[UUID](./uuid.md)
+*   [TopoJSON](./topojson.md)
+*   [UDP](./udp.md)
+*   [URI](./uri.md)
+    A wrapper around both the URL and URN modules.
 *   [URL](./url.md)
-    This module can handle a variety of URL and URI schemes, not just HTTP or FTP urls.
+    This module can handle a variety of URLs, not just HTTP or FTP urls.
+*   [URN](./urn.md)
+*   [UUID](./uuid.md)
+*   [WebRTC](./webrtc.md)
+*   [WebSockets](./websockets.md)
 *   [XML](./xml.md)
     A general purpose module for dealing with XML. For HTML or other markup languages, use their specific modules.
 *	[XML-RPC](./xml-rpc.md)

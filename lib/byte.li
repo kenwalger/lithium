@@ -1,0 +1,13 @@
+import * as Object from "./object.li"
+
+export default class Byte extends BitArray, Object
+
+	constructor()
+
+	destructor()
+		this.storage.free()
+
+	toString()
+
+	toInt8()
+		
