@@ -12,8 +12,8 @@
     Similar to the node.js/io.js cluster module, this module lets you run the same program on several different cores to simply take advantage of multi-core systems.
 *	[Crypto](./crypto.md)
 *	[CSV](./csv.md)
-*	[Date](./date.md)
-    A module for dealing with dates and calendar related things. For timescales less than a few hours, the time modules is a better choice.
+*	[Date & Time](./datetime.md)
+    A module for dealing with times, dates and calendar related things. F
 *	[DNS](./dns.md)
 *   [DOM](./dom.md)
     A module that imitates a number of web platform APIs. Also used by the HTML and XML modules to provide a `document`.
@@ -63,7 +63,6 @@
 	A very low-level module for interfacing with the operating system or environment that the Lithium program is running on/in.
 *   [TCP](./tcp.md)
     A low level TCP module.
-*	[Time](./time.md)
 *	[Timers](./timers.md)
 *   [TLS](./tls.md)
 *   [TopoJSON](./topojson.md)
