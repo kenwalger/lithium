@@ -2,3 +2,6 @@
 name = "lithium"
 version = "0.0.1"
 authors = ["thomasjamesfoster@bigpond.com"]
+
+[bin]
+path = "bin/lithium.rs
