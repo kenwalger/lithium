@@ -1,0 +1,17 @@
+import Collection from 'collection'
+
+export default class Graph extends Collection
+
+  constructor()
+  
+  adjacent(any x, any y)
+  
+  neigbours(any x)
+  
+  addEdge(any from, any to, any edge)
+  
+  removeEdge(any edge)
+  
+  addVertice(any vertice)
+  
+  
