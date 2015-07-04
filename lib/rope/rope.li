@@ -1,0 +1,21 @@
+import Symbol from 'symbol'
+
+export default class Rope extends BinaryTree
+
+  constructor(bitarray)
+  
+  index(Integer i)
+  
+  concat(Rope s)
+  
+  split(Integer i)
+  
+  insert(Integer i, Rope s))
+  
+  delete(Integer i, Integer j)
+  
+  report(Integer i, Integer j)
+    if (i < 0) raise new RangeError()
+    if (j < 0) raise new RangeError()
+  
+  
