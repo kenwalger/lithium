@@ -5,3 +5,6 @@ authors = ["thomasjamesfoster@bigpond.com"]
 
 [bin]
 path = "bin/lithium.rs
+
+[dependencies]
+argparse = "*"
