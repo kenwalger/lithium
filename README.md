@@ -1,46 +1,46 @@
 Lithium
 -------
 
-**Note: Lithium is currently under heavy, unfinished development and isn't usable yet. If you're interested, my email address is on my profile page.**
+**Note: Lithium is currently under heavy, unfinished development and isn't usable yet. If you're interested in Lithium, send me an email: [thomasjamesfoster@bigpond.com](thomasjamesfoster@bigpond.com).**
 
-This repo contains the Lithium standard library, a REPL and some command line tools to work with various implementations of Lithium. I ([Thomas Foster](http://thomasfoster.co/)) am personally working to an extent on two implementations of Lithium:
+*Don't know what this is all about? Skip to [#what-is-lithium]('What is Lithium?').*
 
-* [li.js](http://github.com/thomasfoster96/li.jsjs) - li.js transpiles/compiles Lithium code to ECMAScript 6/7 code. Babel, Browserify and Uglify are used by li.js to 
+This repo contains the Lithium standard library and the `lithium` command line tool, packaged as a module that works with a number of package managers (npm, cargo, etc.) and programming languages (this repo is an ES6 module, Python module, Rust crate, etc).
+
+A compiler/interpreter/REPL for Lithium isn't included in this repo at the moment (a self-hosting compiler may be eventually, but that's not a priority), and so you can install modular compilers/interpreters instead. By default, **li.js** is the compiler/interpreter that's first available (mostly because that's the most complete one). A list of these compiler/interpreter modules is below:
+
+* [li.js](http://github.com/thomasfoster96/li.js) - li.js transpiles/compiles Lithium code to ECMAScript 6/7 code. Babel, Browserify and Uglify are used by li.js to 
 * [lillvm](http://github.com/thomasfoster96/lillvm) - lillvm compiles Lithium to LLVM IR code. li.js is probably much more stable than lillvm.
 
-### What's Lithium?
+### What is Lithium?
 
-Lithium is a programming language that is designed to be easy to re-implement, reduce gotchas, be easy to read, *<insert buzz-word here>*. It's got some pretty nice features that seem to be all the rage these days, such as a reference implementation that compiles to JavaScript and things that LISP has been doing for 50+ years.
+Lithium is a programming language that is designed to be easy to re-implement, reduce gotchas, be easy to read, *<insert buzz-word here>*. It's got some pretty nice features that seem to be all the rage these days, such as an implementation that compiles to JavaScript and some things that LISP's had for 50+ years.
 
-The language is based on a very small group of functions and objects, and the rest of the language is then built up using macros, subclassing and new function definitions. 
+The language is based on a very small group of functions and objects, and the rest of the language is then built up using macros, subclassing and new function definitions. Indeed, syntax that's not a function call has been implemented using macros.
+
+Lithium is very object-oriented, and every type has a corresponding class. 
 
 ### What does it look like?
 
 This is some fairly basic Lithium code:
 
 ```lithium
-process.stdout.write("Hello World!") 
 
-# Oh look, a comment! 
-
-unless (os.cpus.length = 1)
-	process.fork()
-
-int random = 28484923
-
-obj test
-
-str wot = JSON.stringify(obj)	
 ```
 
-### How do I use it?
+### How do I use the command-line tools?
 
-Lithium is currently distributed as a [npm](https://npm.org/) package, which includes the `lithium` command line tool. 
+Open a REPL:
+```bash
+$ lithium
+```
 
-If you've installed the Lithium package, you can use Lithium in the following ways:
+Run (interpret) a Lithium program:
+```bash
+$ lithium run myprogram.li
+```
 
-* Run the Lithium REPL by typing the following at the command line:
-  ```bash
-  lithium
-  ```
-      
+Compile a Lithium program to JavaScript:
+```bash
+$ lithium compile myprogram.li --target js --out myprogram.js
+```
