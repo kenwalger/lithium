@@ -12,3 +12,4 @@ method.add_argument("-c", "--compile", action="store_true")
 method.add_argument("-r", "--run", action="store_true")
 
 args = argparser.parse_args()
+
