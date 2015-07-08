@@ -1,0 +1,9 @@
+export default class Observable extends Iterable
+
+	constructor(subscriber)
+
+	subscribe(observer)
+
+	[Symbol.observer](observer){
+
+	}

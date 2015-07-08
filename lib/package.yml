@@ -1,0 +1,22 @@
+# The standard library module is called 'stdlib', because spelling it out is too complicated.
+name: stdlib
+description: "The Lithium Standard Library."
+
+# The import point is the 'index.li' file.
+main: index.li
+
+# This version number moves with the language.
+version: 0.0.1
+
+# Authors of the package.
+authors:
+    - name: Thomas Foster
+    - email: thomasjamesfoster@bigpond.com
+    - website: https://thomasfoster.co/
+    - twitter: @thomasfoster96
+
+# There isn't am executable associated with the Lithium Standard Library.
+bin: null
+
+# There aren't any install or packaging scripts needed either.
+scripts: null

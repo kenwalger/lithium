@@ -1,0 +1,24 @@
+import Object from 'object.li'
+import Symbol from 'symbol.li'
+import Error from 'error.li'
+
+class Object
+
+	constructor(value, options)
+
+	# No iterator for Objects at the moment.
+	[Symbol.iterator]()
+
+	# All mathematical operators will fail by default. Number overrides these.
+	[Symbol.add](rhs)
+		raise new TypeError("You can't add two objects.")
+	[Symbol.subtract](rhs)
+		raise new TypeError("You can't subtract two objects.")
+	[Symbol.multiply](rhs)
+		raise new TypeError("You can't multiply two objects.")
+	[Symbol.divide](rhs)
+		raise new TypeError("You can't divide two objects.")
+
+	# Array/string operators also fail by default.
+	[Symbol.concatenate](elements)
+		raise new TypeError("You can't concatenate two objects.")
