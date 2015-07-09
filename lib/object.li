@@ -1,13 +1,18 @@
-import Object from 'object.li'
-import Symbol from 'symbol.li'
+import Array from 'array.li'
 import Error from 'error.li'
+import Integer from 'integer.li'
+import Symbol from 'symbol.li'
 
-class Object
+export default class Object
 
 	constructor(value, options)
 
 	# No iterator for Objects at the moment.
+	[Symbol.isA]()
+		raise 
 	[Symbol.iterator]()
+		raise new Error()
+
 
 	# All mathematical operators will fail by default. Number overrides these.
 	[Symbol.add](rhs)
@@ -22,3 +27,11 @@ class Object
 	# Array/string operators also fail by default.
 	[Symbol.concatenate](elements)
 		raise new TypeError("You can't concatenate two objects.")
+	[Symbol.match](string)
+		raise new TypeError("You can't use this object to match something.")
+	[Symbol.replace](string, replacer)
+		raise new TypeError("You can't use this object to replace something.")
+	[Symbol.search](string)
+		raise new TypeError("You can't use this object to search for something.")
+	[Symbol.split](string)
+		raise new TypeError("You can't use this object to split something.")

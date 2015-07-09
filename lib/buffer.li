@@ -1,0 +1,10 @@
+export default class Buffer
+
+	constructor(length)
+
+
+	set(Integer offset, Byte[] value, Integer length)
+
+	# Returns a Byte[].
+	get(Integer offset, Integer length)
+

@@ -1,0 +1,40 @@
+macro('SingleLineComment', '"#" {Anything - NewLine} NewLine')
+
+# Ah, that's better, single line comments exist now.
+
+# More macros needed.
+
+function add(lhs, rhs)
+	try
+		# Try and add these two using the lhs's add method.
+		return lhs[Symbol.add](rhs)
+	try 
+		# See if the rhs can add these two operands.
+		return rhs[Symbol.add](lhs)
+	rescue
+		# Give up.
+		raise new TypeError("Can't add these two types.")
+
+function subtract(lhs, rhs)
+	try
+		return lhs[Symbol.subtract](rhs)
+	try
+		return rhs[Symbol.subtract](lhs)
+	rescue
+		raise new TypeError("Can't subtract these two types.")
+
+function multiply(lhs, rhs)
+	try
+		return lhs[Symbol.multiply](rhs)
+	try
+		return rhs[Symbol.multiply](lhs)
+	rescue
+		raise new TypeError("Can't multiply these two types.")
+
+function divide(lhs, rhs)
+	try
+		return lhs[Symbol.divide](rhs)
+	try
+		return rhs[Symbol.divide](lhs)
+	rescue
+		raise new TypeError("Can't multiply these two types.")

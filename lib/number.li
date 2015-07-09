@@ -2,12 +2,6 @@ import
 
 export default class Number extends Object
 
-	function constructor([object value])
-		switch 
+	constructor()
 
-	function destructor()
-
-	buffer storage = new Buffer()
-
-	function toString()
-		return string numberToString
+	
