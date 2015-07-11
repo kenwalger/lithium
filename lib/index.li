@@ -1,5 +1,6 @@
-macro('SingleLineComment', '"#" {Anything - NewLine} NewLine')
+macro('DoubleQuoteString', '" {}')
 
+macro('SingleLineComment', '"#" {Anything - NewLine} NewLine', function([], do(return(''))))
 # Ah, that's better, single line comments exist now.
 
 # More macros needed.

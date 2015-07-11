@@ -1,0 +1,5 @@
+export default class Map extends Collection
+
+	constructor()
+
+export WeakMap from './weakmap.li'

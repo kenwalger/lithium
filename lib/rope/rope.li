@@ -17,5 +17,3 @@ export default class Rope extends BinaryTree
   report(Integer i, Integer j)
     if (i < 0) raise new RangeError()
     if (j < 0) raise new RangeError()
-  
-  

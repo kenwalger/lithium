@@ -1,0 +1,6 @@
+export default Set extends Collection
+
+	constructor(iterable, options)
+
+export WeakSet from './weakset.li'
+export MultiSet from './multiset.lie'
