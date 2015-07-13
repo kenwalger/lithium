@@ -1,9 +1,7 @@
 # Contributing
 
-### Creating Pages
-
-Please file an issue before creating a new page. New pages will generally correlate with a new language feature or addition, and in such cases there is not much of a point in filing a separate issue as the creation of a new page is implied.
+Feel free to add and contribute to the Lithium Docs. Most constructive additions will be accepted. 
 
 ### Editing Content
 
-Editing spelling and/or grammar mistakes is strongly encouraged. Pull requests that are nothing more than this will be accepted without much fanfare.
+Editing spellin and/or mistaks of graNmar is strongly encouraged. Pull requests that are nothing more than this will be accepted without much fanfare.
