@@ -1,12 +1,12 @@
 # Authors
 
 > **Format**
-> * <name>
->     * <job> at <company>
->     * <twitter>
->     * <email>
->     * <url> 
+> * **`<name>`**
+>     * `<job>` at `<company>`
+>     * `<twitter>`
+>     * `<email>`
+>     * `<website>`
 
-* Thomas Foster
+* **Thomas Foster**
     * @thomasfoster96
     * http://thomasfoster.co/
