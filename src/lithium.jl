@@ -1,3 +1,0 @@
-module Lithium
-
-end
