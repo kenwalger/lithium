@@ -1,0 +1,12 @@
+name: json
+description: "JSON parsing/stringification for Lithium."
+
+main: json.li
+
+version: 0.0.1
+
+authors:
+  - name: Thomas Foster
+    email: thomasjamesfoster@bigpond.com
+    website: http://thomasfoster.co/
+    twitter: @thomasfoster96

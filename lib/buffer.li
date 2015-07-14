@@ -1,10 +1,29 @@
+storage = new Symbol("storage")
+
 export default class Buffer
 
-	constructor(length)
+	private [storage] = undefined
 
+	constructor(Integer length)
+		this[storage] = allocate(length)
 
-	set(Integer offset, Byte[] value, Integer length)
+	destructor()
+		deallocate(this[storage])
 
-	# Returns a Byte[].
-	get(Integer offset, Integer length)
+	set(Integer offset, Byte value)
+		this[storage][offset] = value.toInteger();
+		return Buffer this
 
+	get(Integer offset)
+		return new Byte(this[storage][offset])
+
+	setRange(Integer offset, ByteArray values)
+		for(Integer i = 0; i < values.length; i++)
+			this.set(offset + i, values[i])
+		return this
+
+	getRange(Integer offset, Integer length)
+		ByteArray returnValue = new ByteArray(length)
+		for(Integer i = 0; i < length; i++)
+			returnValue[i] = this.get(offset + i)
+		return returnValue

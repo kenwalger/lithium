@@ -1,0 +1,17 @@
+import {LanguageTag} from 'i18n'
+
+export class Text extends String
+
+	constructor(Buffer storage, LanguageTag lang)
+
+	* graphemes()
+
+export class Word extends Text
+
+	constructor(Buffer storage, LanguageTag lang)
+
+	* graphemes()
+
+export class Sentence extends Text
+
+	constructor(Buffer storage, LanguageTag lang)

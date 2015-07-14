@@ -1,9 +1,27 @@
-macro('DoubleQuoteString', '" {}')
+declare('declare')
+declare('macro')
+declare('function')
+declare('allocate')
+declare('deallocate')
+declare('import')
+declare('export')
+declare('bind')
+declare('weakbind')
 
-macro('SingleLineComment', '"#" {Anything - NewLine} NewLine', function([], do(return(''))))
+macro('DoubleQuoteString', 'Token('"') ({  }) Token('"')', function([string], do(return(SingleQuoteString(string)))))
+macro('StringLiteral', 'DoubleQuoteString | SingleQuoteString | TemplateString', function())
+macro('SingleLineComment', 'Token("#") {Anything - NewLine} NewLine', function([], do(return(''))))
+
 # Ah, that's better, single line comments exist now.
 
-# More macros needed.
+# More macros needed (!)
+
+import Buffer from 'buffer'
+
+# The allocate() and free() functions are no longer available to any code running.
+# The Buffer class must be used to manipulate raw memory.
+allocate = undefined
+free = undefined
 
 function add(lhs, rhs)
 	try

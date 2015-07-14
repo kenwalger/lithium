@@ -1,4 +1,5 @@
 extern crate argparse;
+use std::os;
 use argparse::{ArgumentParser, StoreTrue, Store};
 
 fn main() {

@@ -8,15 +8,9 @@ main: index.li
 # This version number moves with the language.
 version: 0.0.1
 
-# Authors of the package.
+# Authors of the package. Add yourself if you commit to the base stdlib files.
 authors:
-    - name: Thomas Foster
-    - email: thomasjamesfoster@bigpond.com
-    - website: https://thomasfoster.co/
-    - twitter: @thomasfoster96
-
-# There isn't am executable associated with the Lithium Standard Library.
-bin: null
-
-# There aren't any install or packaging scripts needed either.
-scripts: null
+  - name: Thomas Foster
+    email: thomasjamesfoster@bigpond.com
+    website: https://thomasfoster.co/
+    twitter: @thomasfoster96

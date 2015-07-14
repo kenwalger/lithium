@@ -1,5 +1,38 @@
-export default class Map extends Collection
+keysStorage = new Symbol("keys")
+
+export class Map extends Collection
+
+	[keysStorage] = new Array()
+	[valuesStorage] = new Array()
 
 	constructor()
+
+	set size()
+		raise new Error("Can't set the size of a Map.")
+
+	get size()
+
+	clear()
+
+	delete(key)
+
+	* entries()
+
+	forEach(Function callbackFn, Object thisArg)
+
+	get(key)
+
+	has(key)
+
+	* keys()
+		return this[keysStorage]()
+
+	set(key, value)
+
+	* values()
+		return this[valuesStorage]()
+
+	[Symbol.iterator]()
+		return this.entries()
 
 export WeakMap from './weakmap.li'
