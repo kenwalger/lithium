@@ -1,9 +1,0 @@
-name:    Lithium
-version: 0.0.1
-
-library
-  main-is: lithium.hs
-  exposed-modules: Text.Lithium
-
-executable lithium
-  main-is: bin/lithum.hs
