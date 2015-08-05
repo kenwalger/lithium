@@ -1,5 +1,5 @@
 nodejs:
-	npm install -g
+	npm install
 
 python:
 	python setup.py install
