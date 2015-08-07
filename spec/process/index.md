@@ -14,10 +14,14 @@ Parsing is the process of validating and expanding macros.
 
 Execution covers the running of Lithium code, be it in an interpreter or as a compiled binary.
 
-##### [Runtime Environment](./execuation/runtime.md)
+##### [Compilation](./execuation/runtime.md)
 
-This section covers the specifics of the Litihum runtime environment.
+This section covers the specifics of compiled/transpiled Lithium source code.
 
-##### [Optimizations](./execution/optimize.md)
+##### [Interpreting](./execution/optimize.md)
 
-This section covers the limitations of optional optimizations that a Lithium compiler or interpreter may perform.
+Specifics related to interpreting Lithium source code.
+
+### [Optional Processing](./extras.md)
+
+Optional processing, such as optimisation, may be performed on Lithium programs. This section puts some guidelines in place for these.
