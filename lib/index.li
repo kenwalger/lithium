@@ -1,20 +1,12 @@
 declare('declare')
 declare('macro')
-declare('function')
-declare('allocate')
-declare('deallocate')
-declare('import')
-declare('export')
-declare('bind')
-declare('weakbind')
-
-macro('DoubleQuoteString', 'Token('"') ({  }) Token('"')', function([string], do(return(SingleQuoteString(string)))))
-macro('StringLiteral', 'DoubleQuoteString | SingleQuoteString | TemplateString', function())
-macro('SingleLineComment', 'Token("#") {Anything - NewLine} NewLine', function([], do(return(''))))
+macro('SingleLineComment', 'Token("#") ({Anything - NewLine}) NewLine', function([comment], return(Call('comment', [comment]))))
 
 # Ah, that's better, single line comments exist now.
 
 # More macros needed (!)
+
+macro('MacroDeclaration', )
 
 import Buffer from 'buffer'
 

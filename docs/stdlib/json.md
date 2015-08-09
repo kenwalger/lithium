@@ -13,7 +13,7 @@ The JSON module almost exactly mirrors the JSON object found in ECMAScript and J
 
 ##### Returns:
 
-`JSON.parse()` can return any value. Usually it will return a plain `Object` or an `Array` with element type `any`, but it can also return a `Number` or a `String`.
+`JSON.parse()` can return any value. Usually it will return a plain `Object` or an `Array` with element type `Any`, but it can also return a `Number` or a `String`.
 
 ### `JSON.stringify(any object [, function replacer [, string|number space]])`
 

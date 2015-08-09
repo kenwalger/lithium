@@ -11,11 +11,21 @@ The Lithium documentation is split into six sections:
 ### Contents
 
 * [Language](./language/index.md)
-	* [Functions](./language/functions/index.md)
+	* [Routines](./language/routines/index.md)
+        * [Coroutines](./language/routines/coroutines.md)
+        * [Functions](./language/routines/functions.md)
+        * [Generators](./language/routines/generators.md)
+        * [Async Functions](./language/routines/async.md)
+        * [Decorators](./language/routines/decorators.md)
 	* [Variables](./language/variables/index.md)
+        * [Assignment](./language/variables/assignments.md)
+        * [Objects](./language/variables/objects.md)
+        * [Constant Bindings](./language/variables/constants.md)
+        * [Locks and Borrowing](./language/variables/mutex.md)
 	* [Macros](./language/macros/index.md)
     * [Operators](./language/operators.md)
-* [Core](./core/index.md)
+    * [Loops]
+* [Builtins](./core/index.md)
     * [Objects](./core/objects.md)
     * [Binary](./core/binary/index.md)
         * [Buffer](./core/binary/buffer.md)
