@@ -1,29 +1,33 @@
-storage = new Symbol("storage")
-
 export default class Buffer
 
-	private [storage] = undefined
-
 	constructor(Integer length)
-		this[storage] = allocate(length)
+		if (length < 1)
+			throw new RangeError("A Buffer must have a non-zero positive length.")
+		else
+			this[Symbol.storage] := allocate(length)
+			this.length := length
 
 	destructor()
-		deallocate(this[storage])
+		free(this.storage)
 
-	set(Integer offset, Byte value)
-		this[storage][offset] = value.toInteger();
-		return Buffer this
+	get(Integer i)
+		return this[Symbol.get](i)
 
-	get(Integer offset)
-		return new Byte(this[storage][offset])
+	set(Integer i)
+		return this[Symbol.set](i)
 
-	setRange(Integer offset, ByteArray values)
-		for(Integer i = 0; i < values.length; i++)
-			this.set(offset + i, values[i])
-		return this
+	[Symbol.get](property)
+		if (property is a Integer)
+			return this.storage[property];
+		else
+			return super[Symbol.get](property)
 
-	getRange(Integer offset, Integer length)
-		ByteArray returnValue = new ByteArray(length)
-		for(Integer i = 0; i < length; i++)
-			returnValue[i] = this.get(offset + i)
-		return returnValue
+	[Symbol.set](property, value)
+		if (property is a Integer and property >= 1)
+			return this.storage[property] := value;
+		else
+			return super[Symbol.set](property, value)
+
+	generator [Symbol.iterator]()
+		for(Int i = 0; i < length; i += 1)
+			yield this.get(i)

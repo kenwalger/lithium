@@ -1,0 +1,9 @@
+export default class List extends Collection
+
+	[Symbol.constructor]()
+		if(this[Symbol.constructor] = List)
+			raise new Error()
+
+	generator [Symbol.iterator]()
+		for(Int i := 0; i < this.length; i += 1)
+			yield this[i]

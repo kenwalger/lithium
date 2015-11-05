@@ -1,0 +1,15 @@
+export default class Continuation extends Object
+
+	[Symbol.constructor](type, value, state)
+		this.type := type
+		this.value := value
+		this.state := state
+
+		# Make the continuation immutable.
+		this[Symbol.immutable] := true
+
+	type := undefined
+
+	value := undefined
+
+	state := undefined

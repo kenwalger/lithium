@@ -1,18 +1,27 @@
-import Array from 'array.li'
-import Error from 'error.li'
-import Integer from 'integer.li'
-import Symbol from 'symbol.li'
-
 export default class Object
 
-	constructor(value, options)
+	[Symbol.constructor]()
+
+	[Symbol.destructor]()
+
+	# Core 
+	[Symbol.get](property)
+		return get(this, property)
+	[Symbol.set](property, value)
+		return 
+
+	# Equality and identity operators.
+	[Symbol.equal](rhs)
+		return this[Symbol.is](rhs)
+	[Symbol.is](rhs)
+		return same(this, rhs)
+	[Symbol.isA](rhs)
 
 	# No iterator for Objects at the moment.
-	[Symbol.isA]()
-		raise 
 	[Symbol.iterator]()
-		raise new Error()
-
+		raise new TypeError("You can't iterator over an Object.")
+	[Symbol.observer]()
+		raise new TypeError("You can't observe an Object.")
 
 	# All mathematical operators will fail by default. Number overrides these.
 	[Symbol.add](rhs)
@@ -24,14 +33,4 @@ export default class Object
 	[Symbol.divide](rhs)
 		raise new TypeError("You can't divide two objects.")
 
-	# Array/string operators also fail by default.
-	[Symbol.concatenate](elements)
-		raise new TypeError("You can't concatenate two objects.")
-	[Symbol.match](string)
-		raise new TypeError("You can't use this object to match something.")
-	[Symbol.replace](string, replacer)
-		raise new TypeError("You can't use this object to replace something.")
-	[Symbol.search](string)
-		raise new TypeError("You can't use this object to search for something.")
-	[Symbol.split](string)
-		raise new TypeError("You can't use this object to split something.")
+		return Symbol.reference

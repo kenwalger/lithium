@@ -1,0 +1,7 @@
+
+export macro CoroutineLiteral(Identifier("coroutine"), Gap, [Identifier], [Gap], ArgumentsList, Body) -> (, , name, , arguments, body)
+
+export class Coroutine extends Routine
+	constructor(name, coroutine)
+
+	

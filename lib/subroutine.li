@@ -1,0 +1,28 @@
+import {Coroutine} from './coroutine.li'
+
+function validate(tokens)
+	for(Token token of tokens)
+		if ()
+		else
+			for
+
+export macro SubroutineLiteral(Identifier("subroutine"), Gap, [Identifier] := name, [Gap], ArgumentsList := arguments, [Gap], Body := body)
+	return CoroutineLiteral(name, arguments, validate(body))
+
+export macro ProcedureLiteral(Identifier("procedure"), Gap, [Identifier] := name, [Gap], ArgumentsList := arguments, [Gap], Body := body)
+	return CoroutineLiteral(name, arguments, validate(body))
+
+export macro FunctionLiteral(Identifier("function"), Gap, [Identifier] := name, [Gap], ArgumentsList := arguments, [Gap], Body := body)
+	return CoroutineLiteral(name, arguments, validate(body))
+
+export class Subroutine extends Coroutine implements Callable
+
+export constant Procedure := Subroutine
+
+export constant Function := Subroutine
+
+export constant subroutine := Subroutine
+
+export constant procedure := Subroutine
+
+export constant function := Subroutine

@@ -1,0 +1,34 @@
+const registry := new Map()
+
+export class Symbol extends Object
+
+	constructor(String name)
+		this.name := name
+
+	# The for method allows a symbol registry to be used. Useful if you want to 
+	# have a well known symbol for your own use without cluttering Symbol.
+
+	static for(name)
+		if(registry.has(name) = false)
+			registry.set(name, new Symbol(name))
+		return registry.get(name)
+
+	# These are the well known symbols, used for internal methods.
+
+	static call := new Symbol("call")
+
+	static constructor := new Symbol("constructor")
+
+	static destructor := new Symbol("destructor")
+
+	static get := new Symbol("get")
+	
+	static iterator := new Symbol("iterator")
+
+	static immutable := new Symbol("immutable")
+
+	static observer := new Symbol("observer")
+
+	static set := new Symbol("set")
+
+	static storage := new Symbol("storage")

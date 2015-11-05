@@ -1,0 +1,13 @@
+import Generator from './generator.li'
+import Interface from './interface.li'
+
+# 'Iterable' is an Interface, and so extends it.
+
+export default class Iterable extends Interface
+	
+	# To implement Iterable, an object must provide a [Symbol.implements] method
+	# and that method must be a Generator.
+
+	static [Symbol.implements](lhs)
+
+		return ([Symbol.iterator] in lhs) and (lhs[Symbol.iterator] is a Generator)

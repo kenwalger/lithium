@@ -1,3 +1,5 @@
-export * as Server from './server.li'
+export Client from './client.li'
+export Server from './server.li'
 
-export * as Client from './client.li'
+export Request from './request.li'
+export Response from './response.li'

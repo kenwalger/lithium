@@ -9,7 +9,7 @@
 3. Let `i` be 0.
 4. While `i` is less than `length`, do
 	1. Let `codePoint` be the `i`th codePoint in `sourceCode`.
-    1. If `codePoint` has the Unicode property "ID_START", then
+    2. If `codePoint` has the Unicode property "ID_START", then
     	1. Let `codePoints` be a new List with `codePoint` as the sole element.
     	2. Increment `i`.
     	3. Let `codePoint` be the `i`th code point in `sourceCode`.

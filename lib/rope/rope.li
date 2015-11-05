@@ -2,20 +2,12 @@ import Symbol from 'symbol'
 
 export default class Rope extends String
 
-	[storage] := new BinaryTree();
-
-	constructor(storage, options)
+	[Symbol.constructor](iterable, options)
   
 	index(Integer i)
   
- 	concat(Rope s)
+ 	concatenate(Rope s)
   
 	split(Integer i)
 
 	insert(Integer i, Rope s))
-
-	delete(Integer i, Integer j)
-
-	report(Integer i, Integer j)
-		if (i < 0 or ) raise new RangeError()
-	    if (j < 0) raise new RangeError()

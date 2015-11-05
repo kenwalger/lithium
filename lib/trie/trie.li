@@ -1,0 +1,7 @@
+import {Tree} from 'tree'
+
+export default class Trie extends Tree
+
+	[Symbol.constructor](Iterable data := [])
+
+		this[symbol.storage] = new Map(data)

@@ -1,8 +1,0 @@
-import {LRUCache} from 'cache'
-
-# DistributedGraph is a class for Graphs that can be stored remotely, rather than solely in memory.
-# Very useful if you have a medium to large graph and you're not worries about a little bit of latency.
-
-export default class DistributedGraph extends Graph
-
-	constructor(graph, options)

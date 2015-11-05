@@ -1,0 +1,11 @@
+export default class Array extends List
+
+	type = Any
+
+	[Symbol.constructor]()
+
+	[Symbol.destructor]()
+
+	generator [Symbol.iterator]()
+		for(Int i = 0; i < this.length; i += 1)
+			yield this[i];

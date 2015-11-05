@@ -1,0 +1,9 @@
+export default class Response 
+
+	[Symbol.constructor]()
+
+	get headers()
+		
+
+	get body()
+		return new Promise()

@@ -1,13 +1,10 @@
-import * as Object from "./object.li"
+export default class Byte
 
-export default class Byte extends BitArray, Object
+	[Symbol.constructor]()
+		this[Symbol.storage] := new Buffer(1)
 
-	constructor()
+	[Symbol.destructor]()
+		destroy this[Symbol.storage]
 
-	destructor()
-		this.storage.free()
-
-	toString()
-
-	toInt8()
-		
+	[Symbol.equal](rhs)
+		return 
