@@ -2,14 +2,15 @@ import {* as repl} from './repl/index.js';
 
 export default class REPL {
 	
-	constructor(){
+	constructor(options){
 
-		return repl.start()
+		this.instance = repl.start(options);
 
 	}
 
-	call constructor(){
 
+	get context(){
+		return this.instance.context;
 	}
 
 }

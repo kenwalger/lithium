@@ -9,18 +9,19 @@ import program from 'commander';
 
 program
 	.version(require('../package.json').version)
-	.option('-o, --out', 'specify a ');
-	.option('-t, --target', '')
-	.option('-e, --engine', '')
+	.option('-i, --input [path]', 'specify an input directory/file')
+	.option('-o, --output [path]', 'specify a output directory/file')
+	.option('-t, --target [name]', 'compile target')
+	.option('-e, --engine [name]', 'specify which compiler/interpreter to use')
 
 program
-	.command('install')
+	.command('install <pkg>')
 	.action(function(options){
 
 	});
 
 program
-	.command('run')
+	.command('run <script>')
 	.action(function(options){
 
 	});
@@ -28,5 +29,8 @@ program
 program
 	.command('compile')
 	.action()
+
+program
+	.command('*')
 
 program.parse(process.argv);
