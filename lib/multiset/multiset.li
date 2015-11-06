@@ -10,11 +10,4 @@ export default class Multiset extends Bag
 
 			[Symbol.elementType] := type
 
-
-	contains(element)
-
 	count(element)
-
-	union(Multiset multiset)
-
-		return new Multiset([...this, ...multiset])

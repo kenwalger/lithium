@@ -2,46 +2,31 @@
 
 import * as lithium from '../src/index.js';
 
-let rawArgs = process.argv.slice(2);
-let parsedArgs = {};
-let whatToDo = 'repl';
+import * as fs from 'fs';
+import * as path from 'path';
 
-switch(rawArgs[0]){
+import program from 'commander';
 
-	// Install a package/toolkit.
-	case "install":
-		rawArgs.shift();
-		if(!rawArgs[0].match(/^--.*$/)){
-			parsedArgs["package"] = rawArgs.shift();
-		}
-		break;
+program
+	.version(require('../package.json').version)
+	.option('-o, --out', 'specify a ');
+	.option('-t, --target', '')
+	.option('-e, --engine', '')
 
-	// User wants to run or compile a Lithium file.
-	case "run":
-	case "compile":
-		rawArgs.shift();
-		if(!rawArgs[0].match(/^--.*$/)){
-			parsedArgs["file"] = rawArgs.shift();
-		}
-		break;
+program
+	.command('install')
+	.action(function(options){
 
-	// Bare lithium command means open a repl or, if a file is supplied, run a file.
-	default:
-		if(!rawArgs[0].match(/^--.*$/)){
-			parsedArgs["file"] = rawArgs.shift();
-			whatToDo = 'run';
-		} else {
-			whatToDo = 'repl';
-		}
+	});
 
-}
+program
+	.command('run')
+	.action(function(options){
 
-let i = 0;
-while(rawArgs.length > 0){
-	if(rawArgs[i].match(/^--.*$/)){
-		parsedArgs[rawArgs[i].slice(2)] = rawArgs[i+1].match(/^--.*$/) ? (i++, true) : rawArgs[i+1];
-	} 
-	i++;
-}
+	});
 
-lithium[whatToDo](parsedArgs);
+program
+	.command('compile')
+	.action()
+
+program.parse(process.argv);

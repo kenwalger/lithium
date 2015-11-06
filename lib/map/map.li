@@ -26,14 +26,6 @@ export class Map extends Collection
 			get [Symbol.valueType]()
 				return value
 
-			static [Symbol.isA](lhs)
-				return super[Symbol.isA](lhs) or 
-					(((lhs is a Map) and (lhs[Symbol.constructor] implements Map)) and 
-						((Symbol.valueType in lhs) and 
-							(lhs[Symbol.valueType] = this[Symbol.valueType])) and 
-						((Symbol.keyType in lhs) and 
-							(lhs[Symbol.keyType] = this[Symbol.keyType])))
-
 	set size()
 		raise new Error("Can't set the size of a Map.")
 
