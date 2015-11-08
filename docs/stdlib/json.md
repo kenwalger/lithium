@@ -4,6 +4,8 @@ The JSON module almost exactly mirrors the JSON object found in ECMAScript and J
 
 ### `JSON.parse(string text [, function reviver(string key, any value)])`
 
+*Code: [../../lib/json/parse.li](json/parse.li)*
+
 `JSON.parse` parses a string containing JSON data and returns the representation of the object encoded in the JSON string as a native Lithium value.
 
 ##### Parameters:
@@ -16,6 +18,8 @@ The JSON module almost exactly mirrors the JSON object found in ECMAScript and J
 `JSON.parse()` can return any value. Usually it will return a plain `Object` or an `Array` with element type `Any`, but it can also return a `Number` or a `String`.
 
 ### `JSON.stringify(any object [, function replacer [, string|number space]])`
+
+*Code: [../../lib/json/stringify.li](json/stringify.li)*
 
 ##### Parameters:
 

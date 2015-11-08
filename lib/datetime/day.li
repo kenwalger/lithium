@@ -1,7 +1,0 @@
-export default class Day
-
-	constructor()
-
-	static function fromDate()
-
-		return Day 

@@ -1,0 +1,16 @@
+export default class UUID
+
+	[Symbol.constructor](value = unknown)
+
+	[Symbol.equals]()
+
+	[Symbol.lessThan]()
+
+	[Symbol.greaterThan]()
+
+	get [Symbol.hash]()
+		return this[Symbol.storage][Symbol.hash]
+
+	[Symbol.toString]()
+		String hex = this[Symbol.storage].toString(16)
+		return '${hex[:8]}-${hex[8:12]}-${hex[12:16]}-${hex[16:20]}-${hex[20:]}'

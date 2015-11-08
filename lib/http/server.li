@@ -1,0 +1,4 @@
+import {TCPServer} from 'tcp'
+
+export default class HTTPServer extends TCPServer
+
