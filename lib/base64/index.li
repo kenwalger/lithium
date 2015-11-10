@@ -1,9 +1,0 @@
-
-export function encode(string data)
-	
-
-	return string encodedData
-
-export function decode(string encodedData)
-
-	return string data

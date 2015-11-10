@@ -1,0 +1,6 @@
+export default class Integer extends Number
+
+	[Symbol.constructor](value)
+
+	[Symbol.add](lhs, rhs)
+		

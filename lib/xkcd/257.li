@@ -1,7 +1,0 @@
-export default generator xkcd257(Byte ...input)
-	String data := input.map(byte => String(BitArray(byte).join('')).join('')
-	for(Character digit of data)
-		if digit = '1'
-			yield 't’ááłá’í''
-		else
-			yield 'ádin'

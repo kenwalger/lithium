@@ -1,0 +1,6 @@
+name: dom
+
+description: An implementation of the Document Object Model in Lithium.
+
+version: 0.0.1
+

@@ -1,2 +1,0 @@
-export default function xkcd1024()
-	throw new Error("Error", "sit by a lake", -41)

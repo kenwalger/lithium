@@ -1,12 +1,10 @@
-export default class Promise {
+export default class Promise
 	
 	[Symbol.constructor](executor)
 
-	[Symbol.destructor]()
+	[Symbol.call]
 
 	catch()
-
-	cancel()
 
 	then()
 
@@ -17,5 +15,3 @@ export default class Promise {
 	static reject()
 
 	static resolve()
-
-}

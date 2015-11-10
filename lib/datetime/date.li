@@ -1,0 +1,7 @@
+export default class Date 
+
+	[Symbol.constructor]()
+
+	[Symbol.call]()
+
+	static today
