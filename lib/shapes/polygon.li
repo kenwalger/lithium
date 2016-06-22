@@ -1,0 +1,5 @@
+import Shape from './shape.li'
+
+export default class Polygon extends Shape
+
+	

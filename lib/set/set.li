@@ -1,6 +1,8 @@
-export class Set extends Collection
+export class Set<Type> extends Collection
 
-	[Symbol.constructor](Iterable source := [])
+	[Symbol.constructor](Iterable<Type> source := [])
+		super();
+		
 
 export WeakSet from './weakset.li'
 export MultiSet from './multiset.li'

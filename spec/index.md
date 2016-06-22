@@ -34,11 +34,13 @@
 		1. [The `create_list` Function](./builtins/create_list.md)
 		2. [The `get_list_item` Function](./builtins/create_list.md)
 	6. Modules
-		1. [The `import_all` Function](./builtins/import_all.md)
-		2. [The `import_name` Function](./builtins/import_name.md)
-		3. [The `export_name` Function](./builtins/export_name.md)
-	6. Binary Operators
-		1. 
+		1. [The `import` Function](./builtins/import.md)
+		2. [The `export` Function](./builtins/export.md)
+	7. Binary Operators
+		1. [The `bitwise_not` Function](./builtins/bitwise_not.md)
+		2. [The `bitwise_and` Function](./builtins/bitwise_and.md)
+		3. [The `bitwise_or` Function](./builtins/bitwise_or.md)
+		4. [The `bitwise_xor` Function](./builtins/bitwise_xor.md)
 6. [Macro Expansion and Semantics](./macros.md)
 7. [Module Semantics](./modules.md)
 8. [Abstract Syntax Tree](./ast/index.md)

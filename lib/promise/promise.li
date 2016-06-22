@@ -1,8 +1,6 @@
-export default class Promise
+export default class Promise<Type>
 	
-	[Symbol.constructor](executor)
-
-	[Symbol.call]
+	[constructor](Function<Type>)
 
 	catch()
 

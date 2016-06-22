@@ -1,0 +1,3 @@
+import Polygon from './polygon.li'
+
+export default class 

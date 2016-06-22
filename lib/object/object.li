@@ -4,6 +4,8 @@ export default class Object
 
 	[Symbol.destructor]()
 
+	[Symbol.mutable]: true
+
 	# Core 
 	[Symbol.get](property)
 		return get(this, property)

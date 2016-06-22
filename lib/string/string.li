@@ -1,9 +1,4 @@
-export default class String
+export default class String<int length>
 
-	constructor(bytes, options)
-
-	get length()
-
-	* codePoints()
-
-	reverse()
+	constructor(string)
+		if(length)

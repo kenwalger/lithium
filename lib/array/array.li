@@ -1,11 +1,21 @@
-export default class Array extends List
+export default class Array<Class Type = any, int length?> extends List
 
-	type = Any
+	constant Class type = Type
 
-	[Symbol.constructor]()
+	[constructor]()
+		super()
 
-	[Symbol.destructor]()
+	[constructor](Iterable<Type> iterable)
+		super()
+		Iterator iterator: iterable[Symbol.iterator]
 
-	generator [Symbol.iterator]()
-		for(Int i = 0; i < this.length; i += 1)
-			yield this[i];
+		Boolean done: false
+		Type next: undefined
+
+		for (Int i: 0; i < this.length and done = false; )
+
+	[get]()
+
+	generator [iterator]()
+		for (Int i: 0; i < this.length; i: i+1)
+			yield Type this[i]

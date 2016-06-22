@@ -47,5 +47,7 @@ function divide(lhs, rhs)
 		return lhs[Symbol.divide](rhs)
 	try
 		return rhs[Symbol.divide](lhs)
-	rescue
+	catch
 		raise new TypeError("Can't multiply these two types.")
+
+import * from ''
