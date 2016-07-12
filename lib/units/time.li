@@ -1,0 +1,17 @@
+export class Second extends Unit
+	
+	convert(number x, (Minute))
+		return (x/60) minutes
+
+	convert(number x, (Hour))
+		return (x/3600) hours
+
+	convert(number x, (Day))
+		return (x/86400) days
+
+	convert(number x, (Year))
+		return (x/31577600) years
+export alias s: Second
+export alias sec: Second
+export alias second: Second
+export alias seconds: Second

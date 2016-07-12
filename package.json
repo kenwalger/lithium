@@ -1,22 +1,17 @@
 {
-	"name" : "Lithium",
-
-	"version" : "0.0.1",
-
-	"bin" : {
-		"lithium" : "./bin/lithium"
-	},
-
-	"dependencies" : {
-		"colors" : ">=1.0.0",
-		"arg-parser" : ">=1.0.0"
-	},
-
-	"scripts" : {
-		"install" : "./src/install.py"
-	},
-
-	"license" : "MIT",
-
-	"preferGlobal" : true
+  "name": "Lithium",
+  "version": "0.0.1",
+  "bin": {
+    "lithium": "./bin/lithium"
+  },
+  "dependencies": {
+    "arg-parser": ">=1.0.0",
+    "colors": ">=1.0.0",
+    "markdown-code-blocks": "0.0.1"
+  },
+  "scripts": {
+    "install": "./src/install.py"
+  },
+  "license": "MIT",
+  "preferGlobal": true
 }
