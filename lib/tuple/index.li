@@ -1,0 +1,19 @@
+# # Tuples
+# 
+# Tuples are simple lists with each element having its own type. They 
+# are very useful if you want to return a pair of values from a function. Other 
+# than that use case, it's often better to use an ImmutableArray or ImmutableSet 
+# for similar functionality.
+
+export default class Tuple<...Types> extends List
+
+	constant [storage]: new Array(Types.length) 
+
+	[constructor](any ...elements)
+
+	[get](Uint index)
+		if index > this.length
+			throw new RangeError()
+		return Types[index] this[storage][index]
+
+export default class ImmutableTuple<...Types> extends Tuple

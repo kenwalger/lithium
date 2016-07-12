@@ -1,0 +1,32 @@
+function sin(0) -> 0.0
+
+function sin(30) -> 0.5
+
+function sin(90) -> 1.0
+
+function sin(x)
+	return 
+
+function cos(0) -> 1.0
+
+function cos(60) -> 0.5
+
+function cos(90) -> 0.0
+
+function cos(x)
+	return
+
+function tan(0) -> 0.0
+
+function tan(45) -> 1.0
+
+function tan(90) -> ∞
+
+function tan(x)
+	return
+
+function cot(0) -> ∞
+
+function cot(90) -> 0
+
+function cot()

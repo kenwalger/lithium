@@ -1,11 +1,12 @@
-import Interface from './interface.li'
 
-export default class Iterator extends Interface
 
-	# To implement Iterator, an object must have a 'next' method.
+interface Iterator<ReturnType: any>
 
-	static [Symbol.isA](lhs)
-		if ('next' in lhs and lhs.next is a Function)
-			return true
-		else
-			return false
+	boolean done: false
+
+	# The next() method optionally takes a value and returns a pair consisting of an any and a boolean.
+	next(value?) -> Pair<ReturnType, boolean>
+
+interface Iterator<ParameterType: any, ReturnType: any>
+
+export default Iterator

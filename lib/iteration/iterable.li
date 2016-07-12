@@ -1,13 +1,7 @@
-import Generator from './generator.li'
-import Interface from './interface.li'
+import Iterator from 'iterator.li'
 
-# 'Iterable' is an Interface, and so extends it.
+# An Iterable object has a function, [iterator], which takes no arguments and returns an Iterator.
 
-export default class Iterable extends Interface
-	
-	# To implement Iterable, an object must provide a [Symbol.implements] method
-	# and that method must be a Generator.
+export default interface Iterable
 
-	static [Symbol.implements](lhs)
-
-		return ([Symbol.iterator] in lhs) and (lhs[Symbol.iterator] is a Generator)
+	[iterator]() -> Iterator

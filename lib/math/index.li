@@ -1,0 +1,6 @@
+export {add, Addible} from 'add.li'
+export {subtract, Subtractable} from 'subtract.li'
+export {multiply, Multiplicable} from 'multiply.li'
+export {divide, Divisible} from 'divide.li'
+export {negate, Negatable} from 'negate.li'
+export {sine, sin, cosine, cos, tangent, tan, cosecant, cosec, csc, secant, sec, cotangent, cot} from 'trigonometric-functions.li' 

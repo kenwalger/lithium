@@ -1,24 +1,4 @@
-# Binary Operators
 
-export function add(lhs Addible, rhs Addible)
-	try
-		return lhs[Symbol.add](lhs, rhs)
-	catch
-		return rhs[Symbol.add](lhs, rhs)
-
-export function subtract(lhs Subtractable, rhs Subtractable)
-	try
-		return lhs[Symbol.subtract](lhs, rhs)
-	catch
-		return rhs[Symbol.subtract](lhs, rhs)
-
-export function multiply(lhs Multiplicable, rhs Multiplicable)
-	try
-		return lhs[Symbol.multiply](lhs, rhs)
-	catch
-		return rhs[Symbol.multiply](lhs, rhs)
-
-export function divide(lhs Divisable, rhs )
 
 export function equal(lhs, rhs)
 	try

@@ -1,10 +1,11 @@
 export default class Object
 
-	[Symbol.constructor]()
+	[Symbol.constructor](any object)
+		
 
 	[Symbol.destructor]()
 
-	[Symbol.mutable]: true
+	[mutable]: true
 
 	# Core 
 	[Symbol.get](property)
@@ -36,3 +37,9 @@ export default class Object
 		raise new TypeError("You can't divide two objects.")
 
 		return Symbol.reference
+
+	# A static getter for an unsigned Integer will return an Array of this Type.
+	static [get]()
+		return Array<this>
+	static [get](Uint length)
+		return Array<this, length>

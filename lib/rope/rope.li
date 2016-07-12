@@ -1,10 +1,11 @@
-import Symbol from 'symbol'
+import String from '../string/'
 
 export default class Rope extends String
 
-	[Symbol.constructor](iterable, options)
+	[constructor](string)
   
-	index(Integer i)
+	[get](Int i)
+
   
  	concatenate(Rope s)
   
