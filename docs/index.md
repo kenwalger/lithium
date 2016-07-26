@@ -1,43 +1,20 @@
 # Lithium Docs
 
-The Lithium documentation is split into six sections:
- * The core language and syntax.
- * Core classes/methods.
- * Standard library documentation.
- * Packages.
- * Dealing with compilers, interpreters, etc.
- * Other things to read/consult/consider/reference.
+The Lithium documentation is split into seven sections. The sections include a tutorial, a language reference, a standard library reference, information for package authors and information for language implementors, as well as links to further resources and requently asked questions.
 
 ### Contents
 
+* [Tutorial](./tutorial/index.md)
+  A simple introduction to writing Lithium code.
 * [Language](./language/index.md)
-	* [Routines](./language/routines/index.md)
-        * [Coroutines](./language/routines/coroutines.md)
-        * [Functions](./language/routines/functions.md)
-        * [Generators](./language/routines/generators.md)
-        * [Async Functions](./language/routines/async.md)
-        * [Decorators](./language/routines/decorators.md)
-	* [Variables](./language/variables/index.md)
-        * [Assignment](./language/variables/assignments.md)
-        * [Objects](./language/variables/objects.md)
-        * [Constant Bindings](./language/variables/constants.md)
-        * [Locks and Borrowing](./language/variables/mutex.md)
-	* [Macros](./language/macros/index.md)
-    * [Operators](./language/operators.md)
-    * [Loops]
+  Documentation for the language syntax and semantics.
 * [Standard Library](./stdlib/index.md)
-    * [Set](./stdlib/set/index.md)
-    * [Map](./stdlib/map/index.md)
-    * [Text](./stdlib/text/index.md)
+  Documentation for all of the packages included in the standard library.
 * [Packages](./packages/index.md)
-	* [Creating](./packages/creating.md)
-        * [The `package.lip` File](./packages/lip-file.md)
-	* [Maintaining](./packages/maintaing.md)
-	* [Installing](./packages/installing.md)
-	* [Dependencies](./packages/dependencies.md)
+  Documentation and guides for pakcage authors.
 * [Compilers and Interpreters](./implementations/index.md)
-	* [Installing](./implementations/installing.md)
-	* [Parsers](./implementations/parsers.md)
-	* [Compilers](./implementations/compilers.md)
-	* [Interpreters](./implementations/interpreters.md)
-* [Further Reading](./appendix/index.md)
+  Documentation and guides for compiler and interpreter authors. 
+* [Further Reading](./futher-reading/index.md)
+  A yet-to-be-started collection of recommended resources.
+* [What the FAQ?](./what-the-faq/index.md)
+  Lots and lots of frequently (or anticipated to be) asked questions, both good and stupid.

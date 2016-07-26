@@ -1,3 +1,6 @@
+# Arrays
+
+```lithium
 export default class Array<Class Type = any, int length?> extends List
 
 	constant Class type = Type
@@ -7,15 +10,13 @@ export default class Array<Class Type = any, int length?> extends List
 
 	[constructor](Iterable<Type> iterable)
 		super()
-		Iterator iterator: iterable[Symbol.iterator]
 
-		Boolean done: false
-		Type next: undefined
+		integer i: 0
 
-		for (Int i: 0; i < this.length and done = false; )
+		for item of iterable
+			this[i]: item
+			i++
 
-	[get]()
+	[get](integer i)
 
-	generator [iterator]()
-		for (Int i: 0; i < this.length; i: i+1)
-			yield Type this[i]
+	[set](integer i, any value)

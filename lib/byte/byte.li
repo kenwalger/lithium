@@ -1,10 +1,13 @@
+# Byte
+
+```lithium
 export default class Byte
 
-	[Symbol.constructor]()
+	[constructor]()
 		this[Symbol.storage] := new Buffer(1)
 
-	[Symbol.destructor]()
+	[destructor]()
 		destroy this[Symbol.storage]
 
-	[Symbol.equal](rhs)
+	[equal](rhs)
 		return 

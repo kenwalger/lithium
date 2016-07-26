@@ -1,0 +1,6 @@
+MacroPattern ::= (MacroExpression ' '+)* MacroExpression
+MacroExpression ::= 
+MacroName ::= 
+MacroIdentifier ::= ":"
+MacroLiteral ::= ("'"  "'") | ('"' '"')
+MacroIdentifier ::= ""
