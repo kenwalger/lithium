@@ -1,3 +1,5 @@
+
+```lithium
 export class Map extends Collection
 
 	# Maps use a two dimensional Array for storage. The first dimension has an 
@@ -53,5 +55,4 @@ export class Map extends Collection
 
 	[Symbol.iterator]()
 		return this.entries()
-
-export WeakMap from './weakmap.li'
+```

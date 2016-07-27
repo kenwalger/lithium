@@ -8,7 +8,7 @@ main: index.li
 # This version number moves with the language.
 version: 0.0.1
 
-# Authors of the package. Add yourself if you have worked on the stdlib package.
+# Authors of the package. Add yourself if you have worked on the base stdlib package. If you've worked on a subpackage, add yourself there instead.
 authors:
   - name: Thomas Foster
     email: me@thomasfoster.co

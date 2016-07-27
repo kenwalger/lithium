@@ -1,0 +1,4 @@
+name: map
+description: "The Lithium Standard Library."
+main: index.li
+authors: []
