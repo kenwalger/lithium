@@ -1,5 +1,5 @@
 lib:
-	node --eval <<- SCRIPT
+	node --eval <<- EOF
 	var fs = require('fs');
 	(function walk(startPath){
 	    if (!fs.existsSync(startPath)) return;
@@ -15,7 +15,7 @@ lib:
 	        }
 	    }
 	})(require('path').join(process.cwd(), "./lib"));
-	SCRIPT
+	EOF
 
 docs:
 	lithium document lib/ --out docs/stdlib/

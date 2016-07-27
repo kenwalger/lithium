@@ -12,12 +12,12 @@ The `Object` class is the base class for all object in Lithium. All other classe
 
 ## Summary
 
-### (Methods)[]
+### [Methods](#methods-1)
 
 *	[[get]](#get)
 *	[[set]](#set)
 
-### Properties
+### [Properties](#properties-1)
 
 *	[[mutable]](mutable)
 
