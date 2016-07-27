@@ -7,17 +7,19 @@
 The `Object` class is the base class for all object in Lithium. All other classes inherit from it, either explicitly or implicitly.
 
 **Source**: 
-*	Annotated: [../../../lib/object/index.md](object/index.md)
-*	Raw: [../../../lib/object/index.li](object/index.li)
+*	Annotated: [object/index.md](../../../lib/object/index.md)
+*	Raw: [object/index.li](../../../lib/object/index.li)
 
 ## Summary
 
-### Methods
+### (Methods)[]
 
-*	([constructor])[]
-*	([destructor])[]
+*	[[get]](#get)
+*	[[set]](#set)
 
 ### Properties
+
+*	[[mutable]](mutable)
 
 ## `new Object()`
 
@@ -31,7 +33,21 @@ The `Object` class is the base class for all object in Lithium. All other classe
 
 #### `[get](any property)`
 
+Gets the `property` property on this object and returns the value.
+
+##### Parameters
+
+| Name       | Type  | Optional |
+|------------|-------|----------|
+| `property` | `any` | No       |
+
+##### Returns:
+
+*	`any` - the value of the property.
+
 ### `[set]`
 
 #### `[get](any property, any value)`
+
+## Properties
 
