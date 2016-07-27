@@ -6,7 +6,8 @@ Here's where you'll find documentation for all of the packages available as a pa
 
 The following packages are available automatically at runtime and don't need to be imported:
 
-*	[*`number`*](./number/index.md) - A module for integers and both floating- and fixed-point numbers, as well as complex numbers.
+*	[*`object`*](./object/index.md) - The base `Object` class.
+*	[*`number`*](./number/index.md) - Integers and both floating- and fixed-point numbers, as well as complex numbers.
 
 The following packages have to be imported before use:
 
@@ -16,3 +17,4 @@ The following packages have to be imported before use:
 *   [*`http`*](./http/index.md) - Both HTTP and HTTPS servers and clients.
 *   [*`json`*](./json/index.md) - A relatively simple JSON encoding and decoding module.
 *	[*`math`*](./math/index.md) - Non-trivial maths functions.
+
