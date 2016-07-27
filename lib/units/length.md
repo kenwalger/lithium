@@ -9,6 +9,7 @@ export class Metre<Integer magnitude: 1> extends Unit
 	
 export alias Meter: Metre
 export alias m: Metre
+
 ```
 
 ## Imperial Units
@@ -31,6 +32,7 @@ export alias in: Inch
 export alias inch: Inch
 export alias Inches: Inch
 export alias inches: Inch
+
 ```
 
 ```lithium
@@ -49,6 +51,7 @@ export alias Feet: Foot
 export alias feet: Foot
 export alias foot: Foot
 export alias ft: Foot
+
 ```
 
 ```lithium
@@ -67,6 +70,7 @@ export alias Yards: Yard
 export alias yards: Yard
 export alias yard: Yard
 export alias yd: Yard
+
 ```
 
 ```lithium
