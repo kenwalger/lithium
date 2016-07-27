@@ -13,26 +13,33 @@ export default class Object
 	[destructor]()
 ```
 
-Objects can be either immutable or mutable. Well written classes will check to see that an instance is mutable before modifying values using methods.  
-
+Objects can be either immutable or mutable. Well written (!) classes will check to see that an instance is mutable before mutating data (such as a string or property). Once you set the `[mutable]` property to `false`, it will be impossible to change it back to `true`.
+	
 ```lithium
 	boolean [mutable]: true
 
 ```
 
-
+These are the default getter and setter for all properties on an object.
 
 ```lithium
-	# Core 
-	[Symbol.get](any property)
+	[get](any property)
 		return get(this, property)
-	[Symbol.set](any property, value)
-		return 
 
-	# Equality and identity operators.
-	[Symbol.equal](rhs)
+	[set](any property, any value) returns any, throws Error
+		if this[mutable]
+			return set(this, property, value)
+		else 
+			throw new Error("This object is immutable.")
+
+```
+
+Comparison operators work as expected. By default, the `=` operator calls the `is` operator.
+
+```lithium
+	[equal](rhs) returns Boolean
 		return this[is](rhs)
-	[Symbol.is](rhs)
+	[is](rhs) returns Boolean
 		return same(this, rhs)
 	[Symbol.isA](rhs)
 
