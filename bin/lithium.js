@@ -11,38 +11,37 @@ program
 	.option('-e, --engine [name]', 'specify which compiler/interpreter to use')
 
 program
-	.command('add')
-	.action(function(){
-		return api.add();
-	})
-
-program
 	.command('compile [script]')
 	.action(function(script){
-		
+		if(!script){
+			try {
+				var pkg = yaml.parse(fs.readFileSync(path.join(process.cwd(), 'pacakge.lip'), {encoding: 'utf8'}));
+			} catch(e){
+				console.error("Please provide a file to compile or run this ");
+				process.exit(1);
+			}
+		}
+		api.compile()
 	});
 
 program
-	.command('document [file]')
-	.option('-o, --out <path>', 'The output directory for documentation.')
-	.option('-f, --format [type]', 'The format that documentation should be output as.', 'html')
-	.action(require('document.js'));
+	.command('get <key>')
+	.action(function(key){
+		try {
 
-program
-	.command('generate <file>')
-	.action(require('generate.js'));
-
-program
-	.command('get [key]')
-	.action(require('get.js'));
-
-program
-	.command('init [name]')
-	.action(require('init.js'));
+		} catch(e){
+			console.error("Try again in a directory with a package.lip file.")
+		}
+	});
 
 program
 	.command('install [packages...]')
-	.action(require('install.js'));
+	.action(function(packages){
+		if(packages.length === 0){
+			packages = process.cwd();
+		}
+		Promise.all(packages.map(package => api.install(package)));
+	});
 
 program
 	.command('login')
@@ -68,15 +67,24 @@ program
 	.action(require('publish.js'));
 
 program
-	.command('run [script]')
-	.action(require('run.js'));
+	.command('run [file]')
+	.action(function(script){
+		if(!file){
+			
+		}
+		const script = fs.readFileSync(path.join(process.cwd(), script));
+	});
 
 program
-	.command('set <key> <value>')
-	.action(require('set.js'));
+	.command('set <key> [value]')
+	.action(function(key, value){
+
+	});
 
 program
 	.command('*')
-	.action(require('repl.js'));
+	.action(function(){
+
+	});
 
 program.parse(process.argv);

@@ -1,5 +1,5 @@
 {
-  "name": "Lithium",
+  "name": "lithium-lang",
   "version": "0.0.1",
   "bin": {
     "lithium": "./bin/lithium"
