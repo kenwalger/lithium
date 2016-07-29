@@ -8,6 +8,7 @@ General and/or miscellaneous questions.
 
 * [What's the point of this?](./general/whats-the-point.md)
 * [Why isn't x feature in the language?](./general/why-isnt-x-a-feature.md)
+* [Is this a case of Greenspun's tenth rule?](./general/greenspuns-tenth-rule.md)
 
 ## [Syntax and Semantics](./syntax-and-semantics/index.md)
 

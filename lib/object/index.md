@@ -19,6 +19,11 @@ Objects can be either immutable or mutable. Well written (!) classes will check 
 	boolean [mutable]: true
 
 ```
+In some cases, it is useful for a Lithium object to be coerced to a different value when needed - for example, Expressions and Aliases. In these cases, the `[value]` is used rather than the object itself - but to avoid problems, this values default to `this`.
+
+```lithium
+	[value]: this
+```
 
 These are the default getter and setter for all properties on an object.
 

@@ -1,14 +1,21 @@
 # Lithium Language Specification
 
-### Contents
+This directory contains a draft specification describing how to parse, compile and interpret Lithium code - in other words, how to re-implement the language. 
+
+The target audience for this document is language implementors. If you're just writing Lithium code, you're probably looking for the [`docs`](../docs/) directory, which has documentation for language syntax, semantics and the standard library. 
+
+As this document is, for the moment, a non-authoritive draft, you should make sure that your implementation of the language works with the current de facto reference implementation, [li.js](https://github.com/thomasfoster96/li.js). This spec will become authoritive when the language reaches version 1.0.0.
+
+## Contents
 
 1. [Scope](./scope.md)
 2. [Definitions](./definitions.md)
-3. [Specification Data Types](./data-types/index.md)
+3. [Data Types](./data-types/index.md)
 	1. [The `Reference` Type](./data-types/reference.md)
 	2. [The `Byte` Type](./data-types/buffer.md)
 	3. [The `Function` Type](./data-types/function.md)
 	4. [The `List` Type](./data-types/list.md)
+	5. [The `Block` Type](./data-types/block.md)
 4. [Code Processing Flow](./process/index.md)
 	1. [Tokenization](./process/tokenize.md)
 	2. [Parsing](./process/parse.md)

@@ -1,5 +1,7 @@
 # Lithium
 
+![NPM version](https://img.shields.io/npm/v/npm.svg) ![GitHub issues](https://img.shields.io/github/issues/badges/shields.svg?maxAge=2592000?style=plastic) ![license](https://img.shields.io/github/license/mashape/apistatus.svg?maxAge=2592000?style=plastic)]
+
 ***Note: Lithium is unfinished and isn't usable yet. If you're interested in learning a bit more about this project, send me an email: [me@thomasfoster.co](me@thomasfoster.co).***
 
 **Quick Links:** [Docs](./docs/index.md) &bull; [Installation](./INSTALL.md) &bull; [Tutorials](./)

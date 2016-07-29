@@ -16,7 +16,7 @@ Tutorials don't need to refer to other docs as much as guides do, but
 
 ## Guides
 
-Guides are intended for people who are able to use the language to code, but need some help in understanding hwo to solve certain problems and what 'best practice' might be. 
+Guides are intended for people who are able to use the language to code, but need some help in understanding hwo to solve certain problems and what 'best practice' might be. Some guides may begin to resemble tutorials, but they should be a lot more descriptive and be more in depth.
 
 Guides should refer to the langauge reference and the standard library reference as often as possible (and reasonable).
 
@@ -25,6 +25,8 @@ Guides should refer to the langauge reference and the standard library reference
 The language reference describes the semantics and syntax of Lithium. Usually, the author(s) of a new language feature should write the intial documentation for it, so in practice writing brand new documentation for this section should be pretty rare.
 
 ## Standard Library Reference
+
+The standard library reference describes the properties and methods of the various classes in the Lithium standard library. Some of these classes are available at runtime, but others aren't.`
 
 ## Compilers and Interpreters
 

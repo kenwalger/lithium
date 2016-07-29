@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 
 const program = require('commander');
+const api = require('../src/index.js');
 
 program
 	.version(require('../package.json').version)
@@ -11,11 +12,15 @@ program
 
 program
 	.command('add')
-	.action(require('add.js'))
+	.action(function(){
+		return api.add();
+	})
 
 program
 	.command('compile [script]')
-	.action(require('compile.js'));
+	.action(function(script){
+		
+	});
 
 program
 	.command('document [file]')
