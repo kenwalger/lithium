@@ -1,0 +1,11 @@
+# Set
+
+Sets are 
+
+
+```lithium
+export class Set<Type> extends Collection
+
+
+	[Symbol.constructor](Iterable<Type> source: [])
+		super();

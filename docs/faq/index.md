@@ -16,6 +16,7 @@ Questions relating to the syntax and semantics of the language.
 
 * [Why use `:` for assignment over `=`?](./syntax-and-semantics/why-use-colon-for-assignment.md)
 * [Why is Decimal64 the default number type?](./syntax-and-semantics/why-is-decimal64-the-default-number-type.md)
+* [Why aren't these macros like Lisp macros?]
 
 ## [Packages](./packages/index.md)
 

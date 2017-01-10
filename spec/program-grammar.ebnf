@@ -1,0 +1,8 @@
+Program ::= Expression ("," (Expression))*
+Expression ::= (Name | String | Value | Call | List | Block | Unknown) | "(" Expression ("," Expression)* ")"
+Name ::= [a-z]+
+String ::= "'" ([^'] | "\'")* "'"
+Value ::= [1-9] [0-9]*
+Call ::= Expression "(" Expression ("," Expression)* ")"
+List ::= "[" Expression ("," Expression)* "]" | "[" "]"
+Block ::= "{" Expression ("," Expression)* "}"

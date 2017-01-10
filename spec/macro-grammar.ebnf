@@ -1,6 +1,11 @@
-MacroPattern ::= (MacroExpression ' '+)* MacroExpression
-MacroExpression ::= 
-MacroName ::= 
-MacroIdentifier ::= ":"
-MacroLiteral ::= ("'"  "'") | ('"' '"')
-MacroIdentifier ::= ""
+Pattern ::= Match*
+Match ::= String | Token | Expression
+String ::= ("'" ([^'] | "\'")* "'") | ('"' ([^"] | '\"')* '"')
+Token ::= (a-zA-Z)+ ("(" (Match ("," Match)*)? ")")?
+Expression ::= Alternation | Group | Optional | Repetition | Not
+Alternation ::= Match ("|" Match)+
+Group ::= "(" Match* ")"
+Optional ::= Match "?"
+Repetition ::= Match ("*" | "+" | "{" Number ["," Number] "}")
+Number ::= [1-9] [0-9]*
+Not ::= Match "!"

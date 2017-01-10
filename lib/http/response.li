@@ -2,8 +2,8 @@ export default class Response
 
 	[Symbol.constructor]()
 
-	get headers()
-		
+	get headers() returns HTTPResponseHeaders
 
-	get body()
+
+	get body() return Promise<HTTPBody>
 		return new Promise()
