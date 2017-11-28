@@ -6,7 +6,7 @@
 
 **Quick Links:** [Docs](./docs/index.md) &bull; [Installation](./INSTALL.md) &bull; [Tutorials](./)
 
-Hi there! Lithium is a programming langauge that was designed by a self-confessed amateur and subsequently combines too many ill-considered ideas into the one monolithic package. It is highly recommended for those who appreciate sarcasm in README files, those who don't like parentheses and braces but love verbosity and whitespace, those who are prepared to make some coffee while waiting for their program to run (not just compile), and those who think that Lisp, [Haskell](https://xkcd.com/1312/) and Smalltalk aren't flawed enough to be used in production.
+Hi there! Lithium is a programming language that was designed by a self-confessed amateur and subsequently combines too many ill-considered ideas into the one monolithic package. It is highly recommended for those who appreciate sarcasm in README files, those who don't like parentheses and braces but love verbosity and whitespace, those who are prepared to make some coffee while waiting for their program to run (not just compile), and those who think that Lisp, [Haskell](https://xkcd.com/1312/) and Smalltalk aren't flawed enough to be used in production.
 
 A simple "Hello, World!" program in Lithium looks pretty similar to every other "Hello, world!" program ever written:
 ```lithium
